@@ -241,7 +241,7 @@ Pick up the yellow nut and place it into the brown tray.
 
 下次运行已改为训练代码直接打印：`train-yellow-smolvla.py`中的`monitored_update`在前5步及之后每25步调用`print_training_event`，逐行显示`step/total、loss、grad_norm、lr、gpu_peak、update_s`并立即flush；验证、检查点保存、完成和异常结束也打印提示。`ConsoleTee`将控制台输出同步保存到`stdout-*.log`、`stderr-*.log`，保留原有`metrics.jsonl`与状态文件。启动脚本直接运行Python，控制台可实时查看，无需另开日志生成程序。已通过Windows Python编译、PowerShell语法及控制台/文件双输出检查；本轮进程未重启，改动从下次启动生效。
 
-20000步是原始首轮预算，batch 8的样本量不同于官方示例batch 64；实际根据保留集表现提前结束。保留集flow matching损失不等于真实抓放成功率。第5000步模型离线动作检查已完成，实机自主成功率尚未评估。
+20000步是原始首轮预算，batch 8的样本量不同于官方示例batch 64；实际根据保留集表现提前结束。保留集flow matching损失不等于真实抓放成功率。第5000步模型离线动作检查已完成，统计实机成功率尚未评估；参考设备任务完成已由操作员确认。
 
 ### 6.2 第5000步模型离线检查
 
@@ -249,7 +249,7 @@ Pick up the yellow nut and place it into the brown tray.
 
 首个动作的身体五关节平均绝对误差1.73°，夹爪1.05个百分点；完整50步身体平均误差3.66°，保持当前姿势基线为5.65°。短时精度仍需关注：首个动作基线误差0.94°，低于模型。35/200次首目标越过既有工作边界，83/200次需单次相对限幅；肩抬升最大越界10.24°，去除启动阶段后仍为7.51°。模型文件与数值链路通过，原始动作尚不能直接发送给电机。
 
-离线推理显存峰值约1413MiB；批量推理耗时不代表实机控制延迟。详细记录见`第5000步模型离线检查.md`，Windows结果位于本轮日志的`offline_check_005000`，含`summary.json`、`sample_flags.csv`、`predictions.npz`及检查点哈希/清单。后续控制接入见6.3，实机自主成功率尚未评估。
+离线推理显存峰值约1413MiB；批量推理耗时不代表实机控制延迟。详细记录见`第5000步模型离线检查.md`，Windows结果位于本轮日志的`offline_check_005000`，含`summary.json`、`sample_flags.csv`、`predictions.npz`及检查点哈希/清单。后续控制接入见6.3，统计实机成功率尚未评估；参考设备任务完成已由操作员确认。
 
 ### 6.3 第5000步模型实机测试接入
 
@@ -334,7 +334,7 @@ Pick up the yellow nut and place it into the brown tray.
 | 8GB能否微调、loss如何实时看 | BF16 + 冻结VLM，batch8实际完成12000步；训练循环每25步flush打印并同步日志。按保留集选5000步，完整13检查点仍本地保留 | `train-yellow-smolvla.py` |
 | 数据泄漏或验证虚低 | 整条episode隔离为45/5；归一化只从训练45条统计，验证不参与。loss只用于模型比较，不当作实机成功率 | `split.json`、训练集统计 |
 | 身体限速后动作队列反复从开头接入 | 用已接受的实际策略进度衔接异步预测，30FPS模型时间与60Hz伺服分开，减速时推进策略时间而非丢动作 | `yellow_action_queue.py` |
-| 后段松爪没执行，15帧重规划一直截断尾段 | 当前预测按检查点50步剩余段执行到最终关键帧，再接下一包；分数延迟对齐也保留最后一帧 | `TrajectoryBuffer` / 队列衔接 |
+| 后段松爪没执行，15帧重规划一直截断尾段 | 当前预测按检查点50步剩余段执行到最终关键帧，再接下一包；分数延迟对齐也保留最后一帧 | `RetimedActionQueue` / 队列衔接 |
 | 夹住物体后整臂停住 | 夹爪无法达到空载闭合目标不应参与身体共同缩放；身体独立决定进度，夹爪仅裁剪活动范围 | `Guard.command` |
 | 限速后夹爪开合与身体错相 | 先计算身体可接受进度，再按同一时间点插值夹爪，避免提前执行松夹目标 | Guard与队列阶段提交 |
 
@@ -356,7 +356,15 @@ Pick up the yellow nut and place it into the brown tray.
 
 作者校准只作参考，不可直接应用到另一台机械臂。ConfigureHardware导入使用者已经校准并验证过的工作目录并记录哈希，不运行控制；其他设备的坐标范围、USB身份与起点必须适配。实机仍采用本地两次Enter；新采数据写入`captures/`，与下载数据隔离。训练入口新建时间戳目录，不覆盖参考检查点。
 
-发布状态以仓库内文件和Release附件可下载结果为准；具体提交、文件数量、校验值在完成上传后填入本节。
+**2026-10-20公开发布完成。** 采用Mac中转和已登录网页上传HF、Mac已有GitHub CLI登录发布；公司Windows未登录发布账号、未保存发布令牌。Mac中转副本与Windows发布副本逐文件SHA-256一致，未在Mac安装或运行机械臂环境。
+
+| 验收对象 | 固定原生文件版本 / 结果 |
+|---|---|
+| HF模型 | `8fac233eacca92e7e4cff8988bf03bcdc313b6e9`；18个推理/分词器文件全部核对大小与服务端LFS SHA-256或Git对象哈希，另有模型卡、许可和复现代码包 |
+| HF数据 | `509728a12d1dec22d258254bb2cf614867b1b8b9`；153个原生文件、201730299字节全部核对大小与服务端哈希，另有数据卡、许可和复现代码包 |
+| GitHub | 公开主分支代码已逐文件核对Git对象内容；`v1.0.0` Release保存模型ZIP（1202671356字节）、数据ZIP（201770237字节）、复现代码ZIP和`checksums.sha256`；附件服务端SHA-256与本地一致 |
+
+`release.json`固定上述模型/数据版本；复现包的后续文档提交不改动这些原生文件。发布校验依据在`provenance/publication-validation.json`；大文件校验清单见[GitHub Release](https://github.com/damonwangk/so101-yellow-nut-smolvla/releases/tag/v1.0.0)。公开内容不包含访问令牌、SSH密钥或环境缓存。原工作区代码、校准、全部原始数据和13个训练检查点继续保留。
 
 ## 9. 关键代码索引与后续工作
 

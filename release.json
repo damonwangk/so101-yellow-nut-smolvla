@@ -8,7 +8,7 @@
       "*.safetensors",
       "tokenizer/*"
     ],
-    "revision": null,
+    "revision": "8fac233eacca92e7e4cff8988bf03bcdc313b6e9",
     "github_asset": {
       "name": "so101-yellow-nut-model-005000.zip",
       "sha256": "7683cc4122fc55ec3a3a3260cbc72e2e51ac7c0847893d14eb250f03c153e4e4",
@@ -23,7 +23,7 @@
       "meta/*",
       "videos/*"
     ],
-    "revision": null,
+    "revision": "509728a12d1dec22d258254bb2cf614867b1b8b9",
     "github_asset": {
       "name": "so101-yellow-nut-dataset-v3.zip",
       "sha256": "f6660644a26b03b5aa9e38e433aa91138ae5196cefed81e2148842e56697819f",
