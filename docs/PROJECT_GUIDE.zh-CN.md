@@ -366,6 +366,12 @@ Pick up the yellow nut and place it into the brown tray.
 
 `release.json`固定上述模型/数据版本；复现包的后续文档提交不改动这些原生文件。发布校验依据在`provenance/publication-validation.json`；大文件校验清单见[GitHub Release](https://github.com/damonwangk/so101-yellow-nut-smolvla/releases/tag/v1.0.0)。公开内容不包含访问令牌、SSH密钥或环境缓存。原工作区代码、校准、全部原始数据和13个训练检查点继续保留。
 
+### 8.1 公开演示案例
+
+操作员追加提供初始场景照片`IMG_4470 2.HEIC`与成功案例`IMG_4483 2.MOV`。原件保留Mac下载目录，不改动；公开展示使用方向校正且去除EXIF的JPG，以及完整55.33秒H.264 MP4（720×1280、约30FPS、保留原音频）。视频源为1080×1920 HEVC，转换前后时长一致，未裁剪动作顺序。
+
+HF模型/数据仓库分别保存`media/`并在README提供照片和播放器；GitHub README提供完整时长动图预览、在线播放及本仓库Release视频下载。动图按2FPS抽样并合并相同画面的停留时间，总时长55.33秒。`docs/media/demo-manifest.json`记录来源/公开副本SHA-256及转换参数；GitHub Release另附`demo-checksums.sha256`。照片用于场景摆放参考，精确固定准备姿态仍以episode22的起点配置与参考图为准；案例不计入50条训练数据，不更改训练划分或模型。
+
 ## 9. 关键代码索引与后续工作
 
 | 文件（均位于 `D:\so-101`） | 重点 |

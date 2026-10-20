@@ -1,0 +1,47 @@
+{
+  "source_files_preserved_locally": true,
+  "sources": [
+    {
+      "filename": "IMG_4470 2.HEIC",
+      "bytes": 1968529,
+      "sha256": "65377c4dfa8765b8df56a05e0f08024aebf7ccbb7ee70609bb57148097bcef18"
+    },
+    {
+      "filename": "IMG_4483 2.MOV",
+      "bytes": 60879674,
+      "sha256": "4f47b23a2bbf1c1177d1f2b49778272ec4ac66a550d8567a6edaf233807f6e20"
+    }
+  ],
+  "public_assets": {
+    "initial-setup.jpg": {
+      "bytes": 487424,
+      "sha256": "d160359b653e5eb1374e5a6d3891d7a06849db84d01362fdde8e3a5856d69d56"
+    },
+    "success-demo.mp4": {
+      "bytes": 52421612,
+      "sha256": "636afe9594a6c0f28f38bcfecef26e39a3be03bd9acf6c91658bdc5f4db5635b"
+    },
+    "success-preview.gif": {
+      "bytes": 6581949,
+      "sha256": "93dabced7aabb45cd0401cd4abde4da9c3c349d342b30b49f07908aa4bd6cbb8"
+    },
+    "success-poster.jpg": {
+      "bytes": 66438,
+      "sha256": "593e3bab4da3a51b06c4cefc898dc71f3a62bc86c6c7a8eaab6131729ad0a5c5"
+    }
+  },
+  "video": {
+    "audio_tracks": 1,
+    "codec": "avc1",
+    "display_height": 1280,
+    "display_width": 720,
+    "duration_seconds": 55.33,
+    "fps": 29.98372459411621
+  },
+  "conversion": {
+    "photo": "EXIF-aware upright JPEG, maximum original export dimension 1600, EXIF omitted",
+    "video": "macOS avconvert Preset1280x720, H.264 MP4, privacy metadata filter enabled, full duration and audio retained",
+    "gif": "Full sequence sampled at 2FPS; duplicate-frame duration merged losslessly; total duration 55.33 seconds"
+  },
+  "evidence": "Operator-provided successful reference-rig example; not a statistical benchmark. No robot control or training was run to publish media."
+}

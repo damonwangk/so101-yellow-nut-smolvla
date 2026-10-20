@@ -2,6 +2,18 @@
 
 A reproducible Windows SO-101 / SmolVLA project: 50 LeRobot v3 demonstrations, the selected step-5000 checkpoint, guarded controller v7, and one-click launchers.
 
+## 演示 / Demo
+
+操作员提供的初始场景照片和 **55.33秒完整成功案例**。照片用于场景与摆放参考；程序的精确准备姿态见`configs/yellow-model-start-pose.json`和同目录参考图。
+
+| 初始场景与摆放参考 | 夹取黄色螺母并放入棕色盘 |
+|:--:|:--:|
+| <img src="docs/media/initial-setup.jpg" alt="SO-101 initial scene and placement reference" width="280"> | [<img src="docs/media/success-preview.gif" alt="Complete yellow-nut pick-and-place demo preview" width="280">](https://huggingface.co/wang2065186103/so101-yellow-nut-smolvla/blob/main/media/success-demo.mp4) |
+
+[▶ 在线查看完整视频](https://huggingface.co/wang2065186103/so101-yellow-nut-smolvla/blob/main/media/success-demo.mp4) · [下载 GitHub MP4 副本](https://github.com/damonwangk/so101-yellow-nut-smolvla/releases/download/v1.0.0/success-demo.mp4)
+
+动图为完整顺序的低帧率预览，时长不变；完整视频为H.264 MP4（720×1280），保留原音频。原始HEIC/MOV保留在本机，公开副本去除照片EXIF及视频隐私元信息。案例用于展示当前参考设备的结果，非统计成功率评估；不加入50条训练数据。来源与转换校验见[`docs/media/demo-manifest.json`](docs/media/demo-manifest.json)。
+
 ## 发布内容
 
 | 内容 | 位置 |
