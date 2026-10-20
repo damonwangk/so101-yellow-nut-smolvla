@@ -1,0 +1,12 @@
+{
+  "native_dataset_files": 153,
+  "native_dataset_bytes": 201730299,
+  "dataset_byte_identity": true,
+  "checkpoint_tensor_byte_identity": true,
+  "publication_json_changes": [
+    "portable metadata paths",
+    "public model id/license",
+    "local tokenizer resolved by runtime"
+  ],
+  "offline_report": "provenance/release-offline-check.json"
+}

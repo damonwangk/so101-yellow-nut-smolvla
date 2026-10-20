@@ -1,0 +1,65 @@
+{
+  "status": "operator_exit",
+  "pid": 2868,
+  "run_dir": "<AUTHOR_WORKSPACE>\\evaluations\\yellow_nut_to_brown_tray\\step005000-20261020T094811",
+  "checkpoint": "<AUTHOR_WORKSPACE>\\outputs\\train\\yellow_nut_smolvla_20261019T110537\\checkpoints\\005000\\pretrained_model",
+  "controller_version": "trajectory-phase-v7",
+  "motor_enable_attempted": true,
+  "trials": 1,
+  "cleanup": {
+    "follower": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "leader": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    }
+  },
+  "time": "2026-10-20T09:49:51.718468+08:00",
+  "warm_single_inference_s": [
+    0.6573371999547817,
+    0.2624330000253394,
+    0.38701289996970445
+  ],
+  "chunk_size": 50,
+  "execution_horizon": 50,
+  "startup_shadow_passed": true,
+  "camera": {
+    "index_or_path": 1,
+    "backend": 700,
+    "fps": 30,
+    "width": 640,
+    "height": 480,
+    "vid": 13030,
+    "pid": 37457,
+    "name": "icspring camera"
+  },
+  "fixed_start_target": {
+    "shoulder_pan.pos": -5.274725437164307,
+    "shoulder_lift.pos": -77.0988998413086,
+    "elbow_flex.pos": -0.48351648449897766,
+    "wrist_flex.pos": 87.56044006347656,
+    "wrist_roll.pos": -1.890109896659851,
+    "gripper.pos": 52.147239685058594
+  },
+  "start_pose_source": {
+    "episode": 22,
+    "frame": 0,
+    "split": "train",
+    "data_path": "<AUTHOR_WORKSPACE>\\datasets\\yellow_nut_to_brown_tray\\formal\\lerobot\\data\\chunk-000\\file-022.parquet",
+    "data_sha256": "26fa24bef0bf7aa77c2df462af683683a60f61285799495e9e54f2748ebb9b0e"
+  },
+  "start_pose_reference": "<AUTHOR_WORKSPACE>\\configs\\yellow-model-start-reference.jpg",
+  "trial": 1,
+  "reason": "45 second limit or inference worker stopped",
+  "ended": "2026-10-20T09:49:52.527456+08:00"
+}

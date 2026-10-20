@@ -1,0 +1,690 @@
+{
+  "model": {
+    "config.json": {
+      "bytes": 1994,
+      "sha256": "cfdfff99db4781ca5edc8ac42c891fc552ed108d25a69a00aa313bf4b1affaa7"
+    },
+    "model.safetensors": {
+      "bytes": 1197789224,
+      "sha256": "481de4141287c7e6a961fd52fbb730e328054066c1cdcac8914f7f2ff94ea2a9"
+    },
+    "policy_postprocessor.json": {
+      "bytes": 691,
+      "sha256": "f9dddc832597a49fef22a83d94f188776d1b8c8313f75d4f1c7344455fc7e4a3"
+    },
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": {
+      "bytes": 6632,
+      "sha256": "afe8c6005f36879ec4ebf5438ec6122f1f4ff38db922d7964b146f51f94be46c"
+    },
+    "policy_preprocessor.json": {
+      "bytes": 1620,
+      "sha256": "8160f25cbea6359715be202a72f1457fad9efd766323b08f1addb838fe2ea768"
+    },
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": {
+      "bytes": 6576,
+      "sha256": "8cd649788a627e7bd028711a6ce8738b7690a53f3ce8c0bd851ea7c3d1314bd0"
+    },
+    "tokenizer/added_tokens.json": {
+      "bytes": 4739,
+      "sha256": "74135b8664b56088c0006f1c8e848d79a8eba003411f72ebf1dc2ee96227be3a"
+    },
+    "tokenizer/chat_template.json": {
+      "bytes": 430,
+      "sha256": "b585e3598909a5687f9f9d738d35223724dedef256b9b274e1cbfb32b13c74bf"
+    },
+    "tokenizer/config.json": {
+      "bytes": 3767,
+      "sha256": "ea6bc1237e96247f6258de3e202e2e62b93d6f386dc47e7b36b5588bf3a15e17"
+    },
+    "tokenizer/generation_config.json": {
+      "bytes": 136,
+      "sha256": "34835060c9f0f74d1acb456cc72ca32746d3843d9eb5f578f9cbffac1d2eb840"
+    },
+    "tokenizer/merges.txt": {
+      "bytes": 466391,
+      "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510"
+    },
+    "tokenizer/preprocessor_config.json": {
+      "bytes": 599,
+      "sha256": "149e315d9410368e5491455bb06e0f763426e9e56cca731c13b24404a29b6374"
+    },
+    "tokenizer/processor_config.json": {
+      "bytes": 67,
+      "sha256": "f3ad45028447b3562b4752be0d5916d6806c1ef589091a469608dcf0faa1737c"
+    },
+    "tokenizer/special_tokens_map.json": {
+      "bytes": 868,
+      "sha256": "2dfea2a426162316ff1567c82bc6d36d9690cd9f90455f075c77daca78b45c60"
+    },
+    "tokenizer/tokenizer.json": {
+      "bytes": 3548256,
+      "sha256": "5ece781dc8d2b2f3e2f289ca0ae50b17cfc27dd27bfe7971bb8241e0b964331a"
+    },
+    "tokenizer/tokenizer_config.json": {
+      "bytes": 28626,
+      "sha256": "dd9ce2ab89a3dd881bd9378f1a79b943a064b9275a7e1706d5b7b47b68977913"
+    },
+    "tokenizer/vocab.json": {
+      "bytes": 800662,
+      "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79"
+    },
+    "train_config.json": {
+      "bytes": 6468,
+      "sha256": "019c4278cf4a55202a56d9f588595f293c185d79591a62e51a91b2162fb25f46"
+    }
+  },
+  "dataset": {
+    "data/chunk-000/file-000.parquet": {
+      "bytes": 36419,
+      "sha256": "a845d20168f3148643ad106c8d0d8c50a437a658d52b6a75ff922635cbe6ae13"
+    },
+    "data/chunk-000/file-001.parquet": {
+      "bytes": 33249,
+      "sha256": "70477d726c0cbb7654bc7fb503376d74a21d12fcd14fa272eed2ed1a1bf7cb89"
+    },
+    "data/chunk-000/file-002.parquet": {
+      "bytes": 31617,
+      "sha256": "f967763f4aacff35e2a4bba8937507d2101d59260d59830a081d2777fbf15eca"
+    },
+    "data/chunk-000/file-003.parquet": {
+      "bytes": 31282,
+      "sha256": "bb6a90351f236e41d0ba5c1f027342a50bd4ab3c8dad4c7a563637321d82bbca"
+    },
+    "data/chunk-000/file-004.parquet": {
+      "bytes": 28111,
+      "sha256": "13d1618dae796d516dd9c61efb2162146f66a71824a4c2790a12cfcf6c888219"
+    },
+    "data/chunk-000/file-005.parquet": {
+      "bytes": 24304,
+      "sha256": "0252af559eec965798fa5b50246076843fcdecb598af2b5d4f5016146b8f8637"
+    },
+    "data/chunk-000/file-006.parquet": {
+      "bytes": 28155,
+      "sha256": "b0fbf890caecf5a03b0883a60aff7b56554b4e5aff25e1051f5e3f993b676cf3"
+    },
+    "data/chunk-000/file-007.parquet": {
+      "bytes": 28096,
+      "sha256": "fd525ee2fa07ccedb8c604b9509592711d6f46927426f8c4e54b5c460cc5314a"
+    },
+    "data/chunk-000/file-008.parquet": {
+      "bytes": 28056,
+      "sha256": "c89d9d59f702e661143b71de7397148087db9f4c8606def3fb4bb646892aa7ca"
+    },
+    "data/chunk-000/file-009.parquet": {
+      "bytes": 30011,
+      "sha256": "0e4134cc37660d7f4e2e254f0af13cf031d478faad553d11e84dd8cf094fedaf"
+    },
+    "data/chunk-000/file-010.parquet": {
+      "bytes": 30914,
+      "sha256": "aa9b49e2e0608f3b1dba863f6c8dbb1ce71f94e8c9bf1f62ad4fe699f6043b9f"
+    },
+    "data/chunk-000/file-011.parquet": {
+      "bytes": 27440,
+      "sha256": "4574ebe904f9a82d2f0a5e3056f90458490736fc28d44da9965fc9fe6ffd8095"
+    },
+    "data/chunk-000/file-012.parquet": {
+      "bytes": 30919,
+      "sha256": "6cea9c19ef366cf00c29c892c975e328c1311f663755474b5702b4d661269a0f"
+    },
+    "data/chunk-000/file-013.parquet": {
+      "bytes": 27974,
+      "sha256": "ebb7090ad7b232af184392cbe28932f8f96a9a24fd623ee02869109aaf84fd7e"
+    },
+    "data/chunk-000/file-014.parquet": {
+      "bytes": 23972,
+      "sha256": "df765786329495ded2cd3a2567da91506854ebdecf5fafebc2d03b395e6d2351"
+    },
+    "data/chunk-000/file-015.parquet": {
+      "bytes": 27469,
+      "sha256": "fe1fd33474d71375b2cb60a126b1c4d24fd1abb322c896a36cd6e36ebd65c305"
+    },
+    "data/chunk-000/file-016.parquet": {
+      "bytes": 27832,
+      "sha256": "647bc9b3ebe639f979cb4b849f6dd56e18bd754e1fcb1133e3d40e32f54812e9"
+    },
+    "data/chunk-000/file-017.parquet": {
+      "bytes": 27825,
+      "sha256": "a5ce8b51cdc2bd56e0536effae98b711fb28173a2b1d53006a6ab87824e99267"
+    },
+    "data/chunk-000/file-018.parquet": {
+      "bytes": 28799,
+      "sha256": "3123a1a747f3a293a3943775acad2cc7b7322fe53b25c12795f689245d5b7499"
+    },
+    "data/chunk-000/file-019.parquet": {
+      "bytes": 28341,
+      "sha256": "a295cbee97316b529f1721f268d92e6a7fbd01b1253ed301195f2f2f4c549b40"
+    },
+    "data/chunk-000/file-020.parquet": {
+      "bytes": 22369,
+      "sha256": "cbdbef3b27e3bd9b48beb4970c657a05e9016f5b87c5de306f4a9888c213abcc"
+    },
+    "data/chunk-000/file-021.parquet": {
+      "bytes": 23165,
+      "sha256": "e74849e2822a94f0958ff296cf65d34b83971e3b8d256b6559a276ae0a7eba72"
+    },
+    "data/chunk-000/file-022.parquet": {
+      "bytes": 22710,
+      "sha256": "26fa24bef0bf7aa77c2df462af683683a60f61285799495e9e54f2748ebb9b0e"
+    },
+    "data/chunk-000/file-023.parquet": {
+      "bytes": 25363,
+      "sha256": "486a98698ca1a1198aedf7ec0cf7de9959d87661cc838fb0541ad16abda70393"
+    },
+    "data/chunk-000/file-024.parquet": {
+      "bytes": 23956,
+      "sha256": "558d416173705fd1e962fa63ce1cc9052b3c994cab9b0afec7d8c867565de7c4"
+    },
+    "data/chunk-000/file-025.parquet": {
+      "bytes": 22265,
+      "sha256": "50b89ea29b20b2ea9a82d9d1f7d7e57cced04f913e2ce4da33c9fe2ea11815ae"
+    },
+    "data/chunk-000/file-026.parquet": {
+      "bytes": 23090,
+      "sha256": "eaa2d0976cc62dd52799ac49a0cd38481b3e7cce7fbdae2c691b8039d1a1d381"
+    },
+    "data/chunk-000/file-027.parquet": {
+      "bytes": 21293,
+      "sha256": "c4334c3d7134f145c75b8d2904de196c8e400fb39a4fb770cfd8c571ae9925c6"
+    },
+    "data/chunk-000/file-028.parquet": {
+      "bytes": 31175,
+      "sha256": "32d51b2ace53690ea01c020b6e1487f5253ddc30ed42161e4e4bf99d02626f12"
+    },
+    "data/chunk-000/file-029.parquet": {
+      "bytes": 25571,
+      "sha256": "6689c9872c16c9dd26e8f7a8937b5cdf7a4879c908e648fec18bb48c2afa810c"
+    },
+    "data/chunk-000/file-030.parquet": {
+      "bytes": 26062,
+      "sha256": "d861378a7ff1561b689c21ce280937346a152f2eaa73da5ba67c201ca26f3564"
+    },
+    "data/chunk-000/file-031.parquet": {
+      "bytes": 20954,
+      "sha256": "631a4e7c8fba65672a9b33f3b149f9ac34c35c161b6e1f1dd38351082cd1afd9"
+    },
+    "data/chunk-000/file-032.parquet": {
+      "bytes": 26727,
+      "sha256": "3ae381f0fb6893413272f1a32fffa962ab7ccbe6edf112b30f71a84824ed0cab"
+    },
+    "data/chunk-000/file-033.parquet": {
+      "bytes": 25911,
+      "sha256": "373be918a22cf63f5bdb265aa7040212ed363443564c7bc557b982789090a0dc"
+    },
+    "data/chunk-000/file-034.parquet": {
+      "bytes": 26512,
+      "sha256": "78b8499e627280a4b6383affb6a4aa5360a83958dbe1c6a6ec31b6c2649eb257"
+    },
+    "data/chunk-000/file-035.parquet": {
+      "bytes": 25234,
+      "sha256": "029ca79a233c723ba7d80aa34a6c4773e858a112196f6e1710334905f6735301"
+    },
+    "data/chunk-000/file-036.parquet": {
+      "bytes": 24153,
+      "sha256": "838de9d405ed4f2fb41d47e7e4e4fee030f061f7e35b3b9b7ffcc249b128a233"
+    },
+    "data/chunk-000/file-037.parquet": {
+      "bytes": 24073,
+      "sha256": "af97123f09d44bf4c090a4e07ac994a8c533fbcab5fe14a3907bcfa9ff2a666c"
+    },
+    "data/chunk-000/file-038.parquet": {
+      "bytes": 23131,
+      "sha256": "c9b049117c4cb8b5c6ae4787dd42b2010d411ef2a24e4c5429a15db5d063d2af"
+    },
+    "data/chunk-000/file-039.parquet": {
+      "bytes": 24726,
+      "sha256": "6d28ad81c8d7ec72ebc1222a6934c60244910e5908260516ba073a067daaf2d3"
+    },
+    "data/chunk-000/file-040.parquet": {
+      "bytes": 22486,
+      "sha256": "fb66ae2645388083953debfebfe204bb0f0f59d15c31372d5b4402e77e42a996"
+    },
+    "data/chunk-000/file-041.parquet": {
+      "bytes": 23101,
+      "sha256": "6b5ff0e7b0d5bd0cc068ddcea52844f05ec22ca2cb016ed92ca4b3291267be21"
+    },
+    "data/chunk-000/file-042.parquet": {
+      "bytes": 25687,
+      "sha256": "45171d0c3db5d97621bc8137cbd3ac80a34ea4179c00ff5257fae5e9f6561901"
+    },
+    "data/chunk-000/file-043.parquet": {
+      "bytes": 26293,
+      "sha256": "ebb8ca069bc5d93b6b374a1ed48169bd418ed06babb85ffcdb4cd5b362907d81"
+    },
+    "data/chunk-000/file-044.parquet": {
+      "bytes": 23480,
+      "sha256": "5ef5fb50628fc28cdd13ece357e58865790c54b04d4d7913df65b7751915c01e"
+    },
+    "data/chunk-000/file-045.parquet": {
+      "bytes": 23776,
+      "sha256": "7a9126844f442e5901c32acdda57745f4b691086d3896786c8ef08b569e5e86f"
+    },
+    "data/chunk-000/file-046.parquet": {
+      "bytes": 23520,
+      "sha256": "446f3bf2a9cd93c6ec0bb7b9c258a10fa5d663459ad637659fa27bfd4563a8dc"
+    },
+    "data/chunk-000/file-047.parquet": {
+      "bytes": 24454,
+      "sha256": "4154b3b80389879db491e08707ead08a1889ff9febf53f882b249f9914414a40"
+    },
+    "data/chunk-000/file-048.parquet": {
+      "bytes": 25274,
+      "sha256": "4138feb0a85d635bfaeaa50ceb8cb211906de88e20521b0fc48b84018ed314b4"
+    },
+    "data/chunk-000/file-049.parquet": {
+      "bytes": 22437,
+      "sha256": "5812c141aed325103033b38745ce1e2bea810bd3aee2f3d1146ae85543acb573"
+    },
+    "meta/episodes/chunk-000/file-000.parquet": {
+      "bytes": 44440,
+      "sha256": "7987db25dc7995cecb8ac0a16b6f19c679285679d724f1ec2849bcc08d47cddf"
+    },
+    "meta/episodes/chunk-000/file-001.parquet": {
+      "bytes": 44436,
+      "sha256": "81672943dec7bb92b98337ad20f24664d3f688ffe3ab5fedf0bac6e9b69d279b"
+    },
+    "meta/episodes/chunk-000/file-002.parquet": {
+      "bytes": 44436,
+      "sha256": "4878d8a1e00b3ec5495cd36715095263772497b48d49cccef6cbfecf9871ad4b"
+    },
+    "meta/episodes/chunk-000/file-003.parquet": {
+      "bytes": 44444,
+      "sha256": "684b15d743ad0833785510d118a3502892ec0796f09346fd18b002bb97205dab"
+    },
+    "meta/episodes/chunk-000/file-004.parquet": {
+      "bytes": 44430,
+      "sha256": "57235287d8cce1a6cf4e55c28853bb177983f2894b0676f800bb30eba5568e50"
+    },
+    "meta/episodes/chunk-000/file-005.parquet": {
+      "bytes": 44439,
+      "sha256": "d3edd25ba4806236c6804bfe33f9bf32814d5738d367ca2710770104fe1f7fdb"
+    },
+    "meta/episodes/chunk-000/file-006.parquet": {
+      "bytes": 44442,
+      "sha256": "f982fb35f7a1dbf6d96cd0ba32ce5d81ad44e5f88647eccafcb1d5a79ec0cce0"
+    },
+    "meta/episodes/chunk-000/file-007.parquet": {
+      "bytes": 44439,
+      "sha256": "4abff86c247304cb69f6bec3611af258ef1634c5334e52ab7adce1cd3a81b692"
+    },
+    "meta/episodes/chunk-000/file-008.parquet": {
+      "bytes": 44446,
+      "sha256": "0d5430fb8ab78510e3c351a7bcd798bb9af53fb6e911a05f5fc65dd7c10cb85b"
+    },
+    "meta/episodes/chunk-000/file-009.parquet": {
+      "bytes": 44438,
+      "sha256": "0c5593bd7903fb15868bb4c1e292143f3880fcdb772a0b9f9f1afb73ca539b9f"
+    },
+    "meta/episodes/chunk-000/file-010.parquet": {
+      "bytes": 44441,
+      "sha256": "ba9bacbbab3bf789c5722aa1798172e996df760d6f94d28c590e45af2da02bf4"
+    },
+    "meta/episodes/chunk-000/file-011.parquet": {
+      "bytes": 44437,
+      "sha256": "3d9998e65c6a24000a5c46edab1fd2d498b3fe4661367e78842e3902b2c1ad4e"
+    },
+    "meta/episodes/chunk-000/file-012.parquet": {
+      "bytes": 44435,
+      "sha256": "ffa91261da436fafc0ba92cf198f73549d31ec863ae2dfe4dd90dd66632d9b00"
+    },
+    "meta/episodes/chunk-000/file-013.parquet": {
+      "bytes": 44441,
+      "sha256": "821132598694a0cbdffb3fcc533dfb9b32a8cd3763def6e8f18f635bb2d411a8"
+    },
+    "meta/episodes/chunk-000/file-014.parquet": {
+      "bytes": 44439,
+      "sha256": "308d9cf600d14d81220b8cdfe6f7c6fa30feb685db098d8d176d9ae3351f7dec"
+    },
+    "meta/episodes/chunk-000/file-015.parquet": {
+      "bytes": 44438,
+      "sha256": "7232ce5fe8255681ec78ee4992dbfa375f5a91c7e9c0ea0d6c345c4bc8795939"
+    },
+    "meta/episodes/chunk-000/file-016.parquet": {
+      "bytes": 44444,
+      "sha256": "5e41831b43c6c0d406a91f693137fdf7da8832adaa14c8bfbbfed97442ae25eb"
+    },
+    "meta/episodes/chunk-000/file-017.parquet": {
+      "bytes": 44437,
+      "sha256": "7d32d541a0cc3d4d8fa971d49bf3e82a0d112270696bd6f40f48827ea04cecbd"
+    },
+    "meta/episodes/chunk-000/file-018.parquet": {
+      "bytes": 44452,
+      "sha256": "dd4219395636ee703b284f98df37661978d8605b67adb42d74259cfb161954d9"
+    },
+    "meta/episodes/chunk-000/file-019.parquet": {
+      "bytes": 44440,
+      "sha256": "9f14ba43f700f75839010617c073a0eb152d5742acaa36ae6243d98f36430f61"
+    },
+    "meta/episodes/chunk-000/file-020.parquet": {
+      "bytes": 44441,
+      "sha256": "084208a374cc11c957504107405b69ed39f9f26d58421165b826c8d60d05f158"
+    },
+    "meta/episodes/chunk-000/file-021.parquet": {
+      "bytes": 44445,
+      "sha256": "a55b29a328290d6aa8967c3d63127248225b20c0c054ea4d3a442eb7518f09d9"
+    },
+    "meta/episodes/chunk-000/file-022.parquet": {
+      "bytes": 44437,
+      "sha256": "a3df0dd60b66929aec00f2632d81245e22e93fa5e1c9603bc2436eeb53bc7f96"
+    },
+    "meta/episodes/chunk-000/file-023.parquet": {
+      "bytes": 44434,
+      "sha256": "ac3e785fee488c1d18c6f493e6ec5cc9457fba7ebaf0fc73cb108711e6a380b5"
+    },
+    "meta/episodes/chunk-000/file-024.parquet": {
+      "bytes": 44443,
+      "sha256": "cdbfd6dd5b7a5c37b622e7e992a2301cc3bd78958dc7187ac17bcc5d483739f4"
+    },
+    "meta/episodes/chunk-000/file-025.parquet": {
+      "bytes": 44450,
+      "sha256": "abd15abc416b019dbaae278dcf6d4a5df7a6f102cb6bc36f14f9c6fd9a09a294"
+    },
+    "meta/episodes/chunk-000/file-026.parquet": {
+      "bytes": 44434,
+      "sha256": "abf0f138ff47c32feeccd274307df830d70b2c653b89fedbf9e783497e133e53"
+    },
+    "meta/episodes/chunk-000/file-027.parquet": {
+      "bytes": 44438,
+      "sha256": "bb3debb333ad02b8d280ca630731ca6500c0e8580cc0a5509dc9ebf717540890"
+    },
+    "meta/episodes/chunk-000/file-028.parquet": {
+      "bytes": 44444,
+      "sha256": "3966efd61bb7021c5e31e94c3fc4cffb47c393669a60d9c0be76c4ce950b69e0"
+    },
+    "meta/episodes/chunk-000/file-029.parquet": {
+      "bytes": 44443,
+      "sha256": "377839e9ae141268c0233be48273c0004b86149abd4623ec49f7238eb8c0a11b"
+    },
+    "meta/episodes/chunk-000/file-030.parquet": {
+      "bytes": 44435,
+      "sha256": "41c8ef4ff18b0c2cf04b337a2b54fe21fddde024a498079c921ad2104e6ceefe"
+    },
+    "meta/episodes/chunk-000/file-031.parquet": {
+      "bytes": 44453,
+      "sha256": "1b5ff991937764d73a958800fd550a0a38eda94dc6009e0811ed4eb2a53dff42"
+    },
+    "meta/episodes/chunk-000/file-032.parquet": {
+      "bytes": 44434,
+      "sha256": "7f5350fc04d6034cb9289284852e598425a95736a23c1a2e00ac04f81aeb0ec0"
+    },
+    "meta/episodes/chunk-000/file-033.parquet": {
+      "bytes": 44438,
+      "sha256": "804f95b59db84660df8c3162fb7566d86a5a5da7e7ebd6d3a1654da3e04accdb"
+    },
+    "meta/episodes/chunk-000/file-034.parquet": {
+      "bytes": 44438,
+      "sha256": "d1f58499b4e1a22d70c882b195a0a1f5b14af149f70c6e47dc6ecaf753d7470c"
+    },
+    "meta/episodes/chunk-000/file-035.parquet": {
+      "bytes": 44441,
+      "sha256": "c6d82e388fc8402c644eda9ec2dc5b03a64d9b2f93d550edbce32ac5abb54a37"
+    },
+    "meta/episodes/chunk-000/file-036.parquet": {
+      "bytes": 44435,
+      "sha256": "4f255362411b435490d78f0714194e0a7e948b18f2b513351cfc0a24794d6c89"
+    },
+    "meta/episodes/chunk-000/file-037.parquet": {
+      "bytes": 44439,
+      "sha256": "aa4661837e3654ed298e82d3df76af72fb7608a5d54b9dd23c3ff0cb243d7f2f"
+    },
+    "meta/episodes/chunk-000/file-038.parquet": {
+      "bytes": 44439,
+      "sha256": "cfddc2e55674c9ff60541e680d58d85d014d5950c271e20ed400d0a41e923a02"
+    },
+    "meta/episodes/chunk-000/file-039.parquet": {
+      "bytes": 44438,
+      "sha256": "f7a086dcab0fe4d948cf524ea1c788bc69546a116a612bfeaba4151d84bf877e"
+    },
+    "meta/episodes/chunk-000/file-040.parquet": {
+      "bytes": 44437,
+      "sha256": "eb0afc3f72aee9673551753bd33367fba7ea8d02c5c8ea015392a0969f2016c1"
+    },
+    "meta/episodes/chunk-000/file-041.parquet": {
+      "bytes": 44432,
+      "sha256": "7aad3df851b3b884286dae2e02d4c5a8310a1981987d46ee397f5b35e98b4193"
+    },
+    "meta/episodes/chunk-000/file-042.parquet": {
+      "bytes": 44435,
+      "sha256": "c127352651bde987a251cd2c0be4845b4f78884aeb97c3d067ace55d507fb217"
+    },
+    "meta/episodes/chunk-000/file-043.parquet": {
+      "bytes": 44440,
+      "sha256": "b78b2352b75d6092e060db89a17e309f1e33ac69dbdbaae0a8c4f9b717b7d341"
+    },
+    "meta/episodes/chunk-000/file-044.parquet": {
+      "bytes": 44430,
+      "sha256": "dc132cda0cf19fb7088b66eada754d2b6c2a548b36acd15d43b246611e8346de"
+    },
+    "meta/episodes/chunk-000/file-045.parquet": {
+      "bytes": 44440,
+      "sha256": "27e59254c207e4f4b0b234bb527c5fa592d7b50344679d3bb0a4adc9e11712db"
+    },
+    "meta/episodes/chunk-000/file-046.parquet": {
+      "bytes": 44434,
+      "sha256": "f898a5feb92c65d01bd03ae46f72cd60da5582d65ddc660cd2259ced83eb8999"
+    },
+    "meta/episodes/chunk-000/file-047.parquet": {
+      "bytes": 44443,
+      "sha256": "fd15b841ca9590f9eef19932972a46f0006fa5b1615ad58a6333a6dc0681df57"
+    },
+    "meta/episodes/chunk-000/file-048.parquet": {
+      "bytes": 44434,
+      "sha256": "f1d780d5ef98c6cfaf63885d6ff8d523b48d38a2ec8729cadd91061ec06218b1"
+    },
+    "meta/episodes/chunk-000/file-049.parquet": {
+      "bytes": 44437,
+      "sha256": "9cf8856cf2dbaaf7dfd59778c0c241e0a50e5ffd6ac8cdbc44da8da53085f66f"
+    },
+    "meta/info.json": {
+      "bytes": 2944,
+      "sha256": "9069f6f976d794142ba9b3afbc75bb1ade26884d7a39643183468480bf836731"
+    },
+    "meta/stats.json": {
+      "bytes": 10464,
+      "sha256": "ce406a58285613efa9f3a508bad6eda34c0f5a81a5f567844acc04cc65a11b53"
+    },
+    "meta/tasks.parquet": {
+      "bytes": 2270,
+      "sha256": "30f3e576760cb3ea8df84016543f240b71f46467fec4eab1191e090213c0430a"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-000.mp4": {
+      "bytes": 5556386,
+      "sha256": "12c5b8617eca1d3c9b7d20a63ae8bc0e15c98eadfff4ca930a46948120e07469"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-001.mp4": {
+      "bytes": 4948654,
+      "sha256": "111741bba65281d8c32896ca3b8512c8bf62cf5666fd9752cfaa718aba4f4940"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-002.mp4": {
+      "bytes": 5448023,
+      "sha256": "108c2897b95fdf431b9f1ce5a26c7af2dee6a0538cc49517cace06b3edca2da1"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-003.mp4": {
+      "bytes": 5549406,
+      "sha256": "723744b9bc7fa708307145d84d3e7cbd60e3768f9936f0c0968cc968da00b38a"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-004.mp4": {
+      "bytes": 5000280,
+      "sha256": "3b0947b54bfbf6fa0d65a45fd69104a8b12ee07fe7a09b81aae1cf679330d971"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-005.mp4": {
+      "bytes": 3615517,
+      "sha256": "5123305f4e416f95b170a928031a292550974673c97b5655c6052bfb9b279dac"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-006.mp4": {
+      "bytes": 5130208,
+      "sha256": "c53299ff8a30a4940a2516e88b725e4c7690436ed1a9d72c266bdb0999db90ed"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-007.mp4": {
+      "bytes": 4596674,
+      "sha256": "ec9582ee6a145da9a8f94cab437cfb243e10afe47ffadfc40dfb9538c3e89a0e"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-008.mp4": {
+      "bytes": 4232271,
+      "sha256": "337b7828088ca9da6cb6415ccbe9ce8d5bc091d59fae8b46676c9415e89f49fd"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-009.mp4": {
+      "bytes": 5104069,
+      "sha256": "4bc53e60d4dc22f7ef3f757882be27735f061c9e737e3dcb360abf96ee5dfbe6"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-010.mp4": {
+      "bytes": 5475983,
+      "sha256": "a50d0ba532806d9891d860540e9235afb67168d66431fb55974678401ef91ca3"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-011.mp4": {
+      "bytes": 4001725,
+      "sha256": "584bff3042d8be3dd4f208755e53134f71944e3dcb478b73e53cab6390b326bf"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-012.mp4": {
+      "bytes": 5069049,
+      "sha256": "204a6dd23aad6dabf12f3de1dd3d803ecd69fb61ec29daec7030646c0c0b2c53"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-013.mp4": {
+      "bytes": 4185033,
+      "sha256": "1b529eb883ec6591f3edfbc261651b32e453894057cd22e76de7de8d5f4f9942"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-014.mp4": {
+      "bytes": 3462555,
+      "sha256": "2c712b1badb84fb01087bae60bf494092d393c80a4b970f44a36c6d189acef08"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-015.mp4": {
+      "bytes": 4267007,
+      "sha256": "11503aa14ae86c36237d076513ec008c7ba90e270d12d99048eae7007c1ed505"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-016.mp4": {
+      "bytes": 4223502,
+      "sha256": "621012a8471f5257852ad0e623158723e3245bc73cecf85f201e704611eb6a49"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-017.mp4": {
+      "bytes": 4639012,
+      "sha256": "9c88766dde76139d42bb5268ff2117403f42d297fec01ade6c544a809e7acfcb"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-018.mp4": {
+      "bytes": 4497867,
+      "sha256": "987262c992d398a781a2fbea8c2acfcb7bb59e01b693d81718721b1ea0ad19ef"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-019.mp4": {
+      "bytes": 4458390,
+      "sha256": "b78cd1c4d712902fff6d5720ae34f5e423fea335ef456962fe23159aac23e9da"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-020.mp4": {
+      "bytes": 2950415,
+      "sha256": "0a8a8ee437e13a241514c8adbb3ceb1b84caf6d4047ab0d1354bde4ac235ddce"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-021.mp4": {
+      "bytes": 2829830,
+      "sha256": "d8d354d4364c50e66276ba4a80a51abd9bd49b352b12a1ac9e7631ff860133cb"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-022.mp4": {
+      "bytes": 3415377,
+      "sha256": "d349aac9597e6ae55249573a386dd0100ee537cdfb045b2f948584044facb7c8"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-023.mp4": {
+      "bytes": 3429409,
+      "sha256": "c687796da1a619ec0a674e19c524debe0b23591d390b376e74362a1eddd4fb03"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-024.mp4": {
+      "bytes": 3320114,
+      "sha256": "0a67e25a20400483d289e66032c9f7e879ee44750e0a36ef4eab1a0270a284c7"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-025.mp4": {
+      "bytes": 3055400,
+      "sha256": "b494850a6d991490718fa429fc2db57935c110200bce2050346be94425724826"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-026.mp4": {
+      "bytes": 2965802,
+      "sha256": "7411b2ce7a30e24f27c18c45182f759bc54c4bdd539d265bcd8f889757ea75c7"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-027.mp4": {
+      "bytes": 2576569,
+      "sha256": "624e2127715938376383bfd8f9b69ce93c1e67ec432b5a1164db89a81ca5ee8a"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-028.mp4": {
+      "bytes": 4446838,
+      "sha256": "5bdbe451c1effd8efc41ca3a1b7167d883c713d7e41f31945cab1449eff56fd5"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-029.mp4": {
+      "bytes": 3791419,
+      "sha256": "b8b324db0e32ee3585144310ecfb392fbccf66d45c4117d4f10f37c6752359fd"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-030.mp4": {
+      "bytes": 4689631,
+      "sha256": "a1330cf69ea668c5be04583bf6f6647cd54c158c5a2d3dc9e74cea571426bb31"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-031.mp4": {
+      "bytes": 2599524,
+      "sha256": "6cffeee610389c53044257221bae09d7818cc04c2181118b53729320c71c9006"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-032.mp4": {
+      "bytes": 4466489,
+      "sha256": "6823f48556e776bf61de95bc24f0a0a53aac1ec991c0998a3e8ab8983583659f"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-033.mp4": {
+      "bytes": 3980647,
+      "sha256": "00facaa5dbeb04e0fca459a57e60c8b2f9222cb916e71d95fee6bf0c9293b772"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-034.mp4": {
+      "bytes": 4023782,
+      "sha256": "69c52f3a4321c42fb505ce082f3cd513534a5ff99bc8e9210c41c384ea07d285"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-035.mp4": {
+      "bytes": 3392501,
+      "sha256": "d00222e7fb87feb80f8446f2cb63f30e892be1d7809b2c1d1464f50888eabcea"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-036.mp4": {
+      "bytes": 3511854,
+      "sha256": "1979125e9c872b81741f9905da4e1cceaf36329101eefa9a621f7a8a62699347"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-037.mp4": {
+      "bytes": 3794814,
+      "sha256": "031f58188ef126e2e57588deab3aac75fffa7f3ee4c37be36ee4c0cb4516354e"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-038.mp4": {
+      "bytes": 3754078,
+      "sha256": "264b73621c241b743729f01409030f28f2f16b80ec0a574609a45f78ec2fd09e"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-039.mp4": {
+      "bytes": 3723189,
+      "sha256": "56e972ae1352941fe105b169b9ee96448ba71348ba53caba1b346b9db5e7a5b3"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-040.mp4": {
+      "bytes": 3132100,
+      "sha256": "30e0e33809e3f7c45074585362957e451baa61b3c2690c9795fb15f763284c48"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-041.mp4": {
+      "bytes": 3311440,
+      "sha256": "bd28cb1f52ce63faea322ac1cc4285d95ae8c7b7b7f13f421cd50e7eabd864e0"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-042.mp4": {
+      "bytes": 3629829,
+      "sha256": "787224c6f0be504151ded379ed06d1362b3049caef68bcb2c732d88061454dc0"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-043.mp4": {
+      "bytes": 3758575,
+      "sha256": "898116749295b0aff4a88f558f0f80a13f86c892e6de97a20824d90a7e8fc4cd"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-044.mp4": {
+      "bytes": 2852533,
+      "sha256": "df86c8b2fe3ee51522f084b8926dae0b936000163bba58fd89b6e2871d82041d"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-045.mp4": {
+      "bytes": 3702952,
+      "sha256": "436449b863d9120584f6ee231cceb6ad080746304741f65a0a0359c945155126"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-046.mp4": {
+      "bytes": 3684195,
+      "sha256": "b1943ea98a0e1f8a6d70ecdef2dc3f58284709b4ff7b4695b43dcf720c27430a"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-047.mp4": {
+      "bytes": 3976766,
+      "sha256": "8d31f2251df883b144d24e55664f27199b04cb1964cdf1244fb87275f005d9d7"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-048.mp4": {
+      "bytes": 3136338,
+      "sha256": "14a402a73f20cc01cca5bd87b6b8f6396f55fb9dbcc8875934854892b1356b48"
+    },
+    "videos/observation.images.wrist_camera/chunk-000/file-049.mp4": {
+      "bytes": 2818912,
+      "sha256": "5358aa3f39fed6b8d20da86441046a7dc18dd04cbd5fc174697df65728b0175d"
+    }
+  }
+}

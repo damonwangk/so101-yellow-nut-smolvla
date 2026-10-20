@@ -1,0 +1,177 @@
+{
+  "status": "passed",
+  "controller_version": "trajectory-phase-v7",
+  "unit_tests": 38,
+  "hardware_connected": false,
+  "scope": "Saved observations/predictions, simulated feedback. Not a closed-loop policy evaluation or physical success.",
+  "trace_replays": {
+    "20261019T154016": {
+      "v2": {
+        "completed_policy_intervals": 97.0,
+        "preempted_active_segments": 0,
+        "installs": 116,
+        "minimum_progress_between_installs": 0.0,
+        "source_index_max": 3,
+        "index_0_to_3_fraction": 1.0,
+        "empty_cycles_after_first_result": 0,
+        "watchdog_cycles": 0,
+        "shoulder_lift_reversals_ge1deg": 76,
+        "shoulder_lift_command_travel_deg": 498.11553709700877
+      },
+      "v6": {
+        "completed_policy_intervals": 473.1551788698076,
+        "preempted_active_segments": 0,
+        "installs": 11,
+        "minimum_progress_between_installs": 42.0,
+        "source_index_max": 49,
+        "index_0_to_3_fraction": 0.014948256036795707,
+        "empty_cycles_after_first_result": 0,
+        "watchdog_cycles": 0,
+        "shoulder_lift_reversals_ge1deg": 28,
+        "shoulder_lift_command_travel_deg": 491.32269661006035
+      },
+      "actual_guard_integration": {
+        "guard_cycles": 2634,
+        "progress": 473.1551788698076,
+        "hardware_connected": false
+      }
+    },
+    "20261019T154808": {
+      "v2": {
+        "completed_policy_intervals": 150.0,
+        "preempted_active_segments": 0,
+        "installs": 131,
+        "minimum_progress_between_installs": 0.0,
+        "source_index_max": 6,
+        "index_0_to_3_fraction": 0.9559049079754601,
+        "empty_cycles_after_first_result": 0,
+        "watchdog_cycles": 0,
+        "shoulder_lift_reversals_ge1deg": 88,
+        "shoulder_lift_command_travel_deg": 417.7563130693063
+      },
+      "v6": {
+        "completed_policy_intervals": 673.9806359997019,
+        "preempted_active_segments": 0,
+        "installs": 16,
+        "minimum_progress_between_installs": 39.0,
+        "source_index_max": 49,
+        "index_0_to_3_fraction": 0.005368098159509203,
+        "empty_cycles_after_first_result": 0,
+        "watchdog_cycles": 0,
+        "shoulder_lift_reversals_ge1deg": 48,
+        "shoulder_lift_command_travel_deg": 408.10802758020884
+      },
+      "actual_guard_integration": {
+        "guard_cycles": 2630,
+        "progress": 673.9806359997019,
+        "hardware_connected": false
+      }
+    },
+    "20261020T085559": {
+      "v2": {
+        "completed_policy_intervals": 124.0,
+        "preempted_active_segments": 0,
+        "installs": 122,
+        "minimum_progress_between_installs": 0.0,
+        "source_index_max": 6,
+        "index_0_to_3_fraction": 0.9369957741067998,
+        "empty_cycles_after_first_result": 0,
+        "watchdog_cycles": 0,
+        "shoulder_lift_reversals_ge1deg": 71,
+        "shoulder_lift_command_travel_deg": 480.35933217389857
+      },
+      "v6": {
+        "completed_policy_intervals": 732.5546815766436,
+        "preempted_active_segments": 0,
+        "installs": 18,
+        "minimum_progress_between_installs": 37.0,
+        "source_index_max": 49,
+        "index_0_to_3_fraction": 0.005378409527468306,
+        "empty_cycles_after_first_result": 0,
+        "watchdog_cycles": 0,
+        "shoulder_lift_reversals_ge1deg": 50,
+        "shoulder_lift_command_travel_deg": 359.60864527608015
+      },
+      "actual_guard_integration": {
+        "guard_cycles": 2629,
+        "progress": 732.5546815766436,
+        "hardware_connected": false
+      }
+    }
+  },
+  "blocked_gripper": {
+    "simulated_cycles": 300,
+    "policy_progress": 67.28474356267536,
+    "max_gripper_position_error": 2.5996433562296346,
+    "max_gripper_step": 0.23080704474226366,
+    "body_caps_passed": true,
+    "gripper_absolute_range_passed": true,
+    "hardware_connected": false
+  },
+  "fixed_start": {
+    "homing_simulated_cycles": 730,
+    "initial_poses": 9,
+    "body_caps_passed": true,
+    "gripper_range_only": true,
+    "hardware_connected": false
+  },
+  "current_trace_comparison": {
+    "before_v5_h15": {
+      "post_close_grip_max_pp": 40.923095703125,
+      "post_close_open_over45_cycles": 0,
+      "post_close_first_open_s_from_model_control": null,
+      "grip_samples_video_seconds": {
+        "14": 35.226,
+        "20": 33.329,
+        "25": 33.103,
+        "26": 35.601,
+        "30": 31.886,
+        "35": 35.816,
+        "40": 33.096,
+        "44": 32.374
+      },
+      "horizon": 15,
+      "max_grip_pp": 56.29463195800781,
+      "open_over45_cycles": 502,
+      "first_open_s_from_model_control": 0.0,
+      "max_source_index": 27,
+      "installs": 45,
+      "max_body_step_deg": 0.2500000000000002,
+      "max_body_feedback_error_deg": 0.3571427690990383,
+      "queue_empty_cycles": 0,
+      "watchdog_cycles": 0,
+      "progress": 660.8843142396937
+    },
+    "after_v6_h50": {
+      "post_close_grip_max_pp": 47.99350357055664,
+      "post_close_open_over45_cycles": 20,
+      "post_close_first_open_s_from_model_control": 26.16499499999918,
+      "grip_samples_video_seconds": {
+        "14": 43.149,
+        "20": 35.491,
+        "25": 34.869,
+        "26": 32.092,
+        "30": 37.013,
+        "35": 37.262,
+        "40": 33.592,
+        "44": 31.951
+      },
+      "horizon": 50,
+      "max_grip_pp": 55.78313446044922,
+      "open_over45_cycles": 544,
+      "first_open_s_from_model_control": 0.0,
+      "max_source_index": 49,
+      "installs": 18,
+      "max_body_step_deg": 0.2500000000000002,
+      "max_body_feedback_error_deg": 0.35714237476002353,
+      "queue_empty_cycles": 0,
+      "watchdog_cycles": 0,
+      "progress": 732.5546815766436
+    }
+  },
+  "forbidden_hardware_call_counts": {
+    "serial_open": 0,
+    "bus_connect": 0,
+    "camera_connect": 0
+  }
+}

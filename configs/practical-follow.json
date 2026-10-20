@@ -1,0 +1,110 @@
+{
+  "version": 4,
+  "status": "user_confirmed_usable_teleoperation",
+  "created": "2026-10-16T09:42:06.492477+08:00",
+  "lerobot_version": "0.6.1",
+  "fps": 60,
+  "max_relative_target": {
+    "shoulder_pan": 5.0,
+    "shoulder_lift": 5.0,
+    "elbow_flex": 5.0,
+    "wrist_flex": 5.0,
+    "wrist_roll": 5.0,
+    "gripper": 2.0
+  },
+  "startup_blend_seconds": 3.0,
+  "ports": {
+    "leader": "COM4",
+    "follower": "COM3"
+  },
+  "usb_serials": {
+    "leader": "5B7B015114",
+    "follower": "5B7B015028"
+  },
+  "offset_degrees": {
+    "wrist_flex.pos": -30.1978021978022,
+    "shoulder_lift.pos": 0.0,
+    "elbow_flex.pos": -90.02197802197803
+  },
+  "follower_limits_raw": {
+    "shoulder_pan": [
+      852,
+      3232
+    ],
+    "shoulder_lift": [
+      1547,
+      3319
+    ],
+    "elbow_flex": [
+      0,
+      4091
+    ],
+    "wrist_flex": [
+      2004,
+      3992
+    ],
+    "wrist_roll": [
+      0,
+      4095
+    ],
+    "gripper": [
+      1781,
+      2433
+    ]
+  },
+  "calibration_sha256": {
+    "leader": "48ccffbbef9a9e805d8347053ff1fa437ae31b7c73b86cb387da186f3002dfc0",
+    "follower": "a8867a026098c7919e4ec2a341580ae02f1ad06f9f086ff03bd48ca983f23d96"
+  },
+  "reference_sources": [
+    "reference-wrist_matched_pose1_20261016-20261016T093147.json",
+    "reference-wrist_matched_pose2_20261016-20261016T093309.json",
+    "reference-wrist_matched_pose3_20261016-20261016T093521.json"
+  ],
+  "reference_offsets_degrees": [
+    30.1978021978022,
+    37.14285714285714,
+    22.637362637362635
+  ],
+  "reference_residuals_after_median_correction_degrees": [
+    0.0,
+    6.945054945054938,
+    -7.5604395604395656
+  ],
+  "interpretation": "Human-aligned approximate wrist correction, not physical precision calibration. Limits remain physical/raw bounds independent of coordinate compensation. Gripper units remain percentages.",
+  "dataset_action_contract": "Record sent_action (actual driver-returned follower targets). Keep leader_action separate. A model trained in follower coordinates must not receive the leader wrist correction again.",
+  "offline_source_raw_shifts": {
+    "wrist_flex": 1024,
+    "shoulder_lift": 1024,
+    "elbow_flex": -1024
+  },
+  "leader_wrist_seam_rebase": {
+    "shift_counts": 1024,
+    "old_homing_offset": -1285,
+    "new_homing_offset": -261,
+    "journal": "D:\\so-101\\calibration\\proposals\\leader-wrist-seam-20261016T095859",
+    "source_raw_coordinates": "Historical unmodified capture rows are converted only during replay."
+  },
+  "reference_leader_coordinate_shifts_degrees": {
+    "shoulder_lift.pos": 0.0,
+    "elbow_flex.pos": 90.02197802197803
+  },
+  "leader_shoulder_elbow_seam_rebase": {
+    "journal": "D:\\so-101\\calibration\\proposals\\leader-shoulder-elbow-seams-20261016T103945",
+    "interpretation": "Elbow -90.021978 deg offset cancels an encoder coordinate rebase; it is not a newly estimated physical joint bias. Follower target coordinates are preserved on the observed continuous motion branch."
+  },
+  "coordinate_frame_version": 3,
+  "reuse_current_observation": true,
+  "observation_max_age_seconds": 0.035,
+  "log_flush_seconds": 0.5,
+  "performance_trial": {
+    "created": "2026-10-16T10:48:24.509378+08:00",
+    "backup": "D:\\so-101\\archive\\follow-before-performance-20261016T104824",
+    "baseline": "logs/follow-performance-baseline.json",
+    "interpretation": "60 Hz is a target until measured. Body relative goal error caps rise 2->5 degrees; gripper stays 2 percentage points. Native limiter uses current-frame observation, refreshing stale feedback before sending through native send_action. PID and calibration unchanged."
+  },
+  "operator_confirmation": {
+    "date": "2026-10-16",
+    "scope": "User reports current following has no major issues; not precision metrology or learned-policy validation."
+  }
+}

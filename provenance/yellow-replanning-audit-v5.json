@@ -1,0 +1,538 @@
+{
+  "scope": "Saved predictions and actual arrival times. Counterfactual simulated feedback/request progress; not new closed-loop policy predictions or physical success. No hardware imported or opened.",
+  "trace": "<AUTHOR_WORKSPACE>\\evaluations\\yellow_nut_to_brown_tray\\step005000-20261020T085559\\control.jsonl",
+  "actual_v5": {
+    "predictions": 157,
+    "installs": 55,
+    "control_cycles": 2629,
+    "max_source_index": 29,
+    "installs_with_future_opening": 20,
+    "installs_where_opening_stays_after_selected_indices": 11,
+    "post_video14_grip_max_pp": 37.58340092137867,
+    "post_video14_open_over45_cycles": 0,
+    "grip_exact_reconstruction_max_error_pp": 2.7000623958883807e-13,
+    "grip_proposed_vs_accepted_phase_max_gap_pp": 1.100162453306197,
+    "installed_segments": [
+      {
+        "installed_wall_time": 1792457801.8021042,
+        "observed_at": 460522.0974504,
+        "offset": 0.0,
+        "max_source_index": 14,
+        "first_predicted_open_index": 0,
+        "max_grip_executed": 55.78313446044922
+      },
+      {
+        "installed_wall_time": 1792457802.4476523,
+        "observed_at": 460522.5607422,
+        "offset": 15.0,
+        "max_source_index": 29,
+        "first_predicted_open_index": 15,
+        "max_grip_executed": 55.066673278808594
+      },
+      {
+        "installed_wall_time": 1792457803.2134976,
+        "observed_at": 460523.712547,
+        "offset": 7.0,
+        "max_source_index": 21,
+        "first_predicted_open_index": 7,
+        "max_grip_executed": 55.279945373535156
+      },
+      {
+        "installed_wall_time": 1792457803.8442078,
+        "observed_at": 460524.2406113,
+        "offset": 10.108193938743817,
+        "max_source_index": 24,
+        "first_predicted_open_index": 11,
+        "max_grip_executed": 55.40012055890541
+      },
+      {
+        "installed_wall_time": 1792457804.830457,
+        "observed_at": 460525.2645744,
+        "offset": 3.234538941839112,
+        "max_source_index": 17,
+        "first_predicted_open_index": 4,
+        "max_grip_executed": 56.33992157204611
+      },
+      {
+        "installed_wall_time": 1792457806.1074843,
+        "observed_at": 460526.4962396,
+        "offset": 6.680137604521704,
+        "max_source_index": 20,
+        "first_predicted_open_index": 7,
+        "max_grip_executed": 56.152921681410014
+      },
+      {
+        "installed_wall_time": 1792457806.9881234,
+        "observed_at": 460527.3609149,
+        "offset": 7.0,
+        "max_source_index": 21,
+        "first_predicted_open_index": 7,
+        "max_grip_executed": 56.41754150390625
+      },
+      {
+        "installed_wall_time": 1792457807.7107456,
+        "observed_at": 460528.1765882,
+        "offset": 6.16404831187468,
+        "max_source_index": 20,
+        "first_predicted_open_index": 7,
+        "max_grip_executed": 54.5128685808062
+      },
+      {
+        "installed_wall_time": 1792457808.95273,
+        "observed_at": 460529.3126821,
+        "offset": 6.0,
+        "max_source_index": 20,
+        "first_predicted_open_index": 6,
+        "max_grip_executed": 52.79014252649924
+      },
+      {
+        "installed_wall_time": 1792457809.5836303,
+        "observed_at": 460529.9047482,
+        "offset": 11.011690892687483,
+        "max_source_index": 25,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 46.98091006409496
+      },
+      {
+        "installed_wall_time": 1792457810.575534,
+        "observed_at": 460530.7689188,
+        "offset": 11.815417728837332,
+        "max_source_index": 25,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 39.63509579264961
+      },
+      {
+        "installed_wall_time": 1792457811.1063213,
+        "observed_at": 460531.3606772,
+        "offset": 14.0,
+        "max_source_index": 28,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 35.032894134521484
+      },
+      {
+        "installed_wall_time": 1792457811.7375803,
+        "observed_at": 460532.1605002,
+        "offset": 9.0,
+        "max_source_index": 23,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 33.931114196777344
+      },
+      {
+        "installed_wall_time": 1792457812.3161483,
+        "observed_at": 460532.7531859,
+        "offset": 9.0,
+        "max_source_index": 23,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 33.69023895263672
+      },
+      {
+        "installed_wall_time": 1792457813.353462,
+        "observed_at": 460533.8086597,
+        "offset": 5.226384164755757,
+        "max_source_index": 19,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 34.5324752770095
+      },
+      {
+        "installed_wall_time": 1792457814.5058281,
+        "observed_at": 460534.8968139,
+        "offset": 5.619968713987646,
+        "max_source_index": 19,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 34.805758866421996
+      },
+      {
+        "installed_wall_time": 1792457815.3720467,
+        "observed_at": 460535.6970678,
+        "offset": 10.35394851372152,
+        "max_source_index": 24,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 34.09777321590377
+      },
+      {
+        "installed_wall_time": 1792457816.5001533,
+        "observed_at": 460536.6250667,
+        "offset": 10.721966953828144,
+        "max_source_index": 24,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 35.88216027701864
+      },
+      {
+        "installed_wall_time": 1792457817.6715782,
+        "observed_at": 460537.9366257,
+        "offset": 9.0,
+        "max_source_index": 23,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 35.10868769709853
+      },
+      {
+        "installed_wall_time": 1792457819.1195982,
+        "observed_at": 460539.2966481,
+        "offset": 6.0,
+        "max_source_index": 20,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 34.192405700683594
+      },
+      {
+        "installed_wall_time": 1792457820.5502703,
+        "observed_at": 460540.8965083,
+        "offset": 6.030049407468823,
+        "max_source_index": 20,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 34.28837600276823
+      },
+      {
+        "installed_wall_time": 1792457821.1973195,
+        "observed_at": 460541.680946,
+        "offset": 5.5,
+        "max_source_index": 19,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 34.02381896972656
+      },
+      {
+        "installed_wall_time": 1792457821.9921224,
+        "observed_at": 460542.2407946,
+        "offset": 11.325674770618434,
+        "max_source_index": 25,
+        "first_predicted_open_index": 41,
+        "max_grip_executed": 37.58340092137867
+      },
+      {
+        "installed_wall_time": 1792457822.618579,
+        "observed_at": 460542.9136876,
+        "offset": 12.0,
+        "max_source_index": 26,
+        "first_predicted_open_index": 33,
+        "max_grip_executed": 35.70784378051758
+      },
+      {
+        "installed_wall_time": 1792457823.5436964,
+        "observed_at": 460543.7926318,
+        "offset": 10.347352033419952,
+        "max_source_index": 24,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 34.253319268567665
+      },
+      {
+        "installed_wall_time": 1792457824.403331,
+        "observed_at": 460544.6891461,
+        "offset": 10.385309086176562,
+        "max_source_index": 24,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 34.29036425126913
+      },
+      {
+        "installed_wall_time": 1792457824.9696736,
+        "observed_at": 460545.2166115,
+        "offset": 13.0,
+        "max_source_index": 27,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 35.65907669067383
+      },
+      {
+        "installed_wall_time": 1792457825.703169,
+        "observed_at": 460546.145096,
+        "offset": 9.5,
+        "max_source_index": 23,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 33.87088441848755
+      },
+      {
+        "installed_wall_time": 1792457826.648154,
+        "observed_at": 460547.168808,
+        "offset": 4.0,
+        "max_source_index": 18,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 32.77882385253906
+      },
+      {
+        "installed_wall_time": 1792457827.5090485,
+        "observed_at": 460547.9046562,
+        "offset": 7.5,
+        "max_source_index": 21,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 33.88883590698242
+      },
+      {
+        "installed_wall_time": 1792457828.1565309,
+        "observed_at": 460548.4006549,
+        "offset": 12.139945837055848,
+        "max_source_index": 26,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 32.96634208820112
+      },
+      {
+        "installed_wall_time": 1792457828.9056196,
+        "observed_at": 460549.0574641,
+        "offset": 13.125711367593794,
+        "max_source_index": 27,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 34.178796389054305
+      },
+      {
+        "installed_wall_time": 1792457829.7921894,
+        "observed_at": 460550.2886083,
+        "offset": 7.5,
+        "max_source_index": 21,
+        "first_predicted_open_index": 36,
+        "max_grip_executed": 34.352800369262695
+      },
+      {
+        "installed_wall_time": 1792457830.5544763,
+        "observed_at": 460551.0726482,
+        "offset": 7.0,
+        "max_source_index": 21,
+        "first_predicted_open_index": 41,
+        "max_grip_executed": 34.21053695678711
+      },
+      {
+        "installed_wall_time": 1792457831.3024979,
+        "observed_at": 460551.5685688,
+        "offset": 8.349262271428245,
+        "max_source_index": 22,
+        "first_predicted_open_index": 38,
+        "max_grip_executed": 36.54467868136799
+      },
+      {
+        "installed_wall_time": 1792457832.152644,
+        "observed_at": 460552.4327749,
+        "offset": 10.152104900072118,
+        "max_source_index": 24,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 35.500992121796955
+      },
+      {
+        "installed_wall_time": 1792457832.9852016,
+        "observed_at": 460553.2647021,
+        "offset": 11.033112154409423,
+        "max_source_index": 25,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 36.809200262946966
+      },
+      {
+        "installed_wall_time": 1792457833.5470524,
+        "observed_at": 460553.7625287,
+        "offset": 14.0,
+        "max_source_index": 28,
+        "first_predicted_open_index": 49,
+        "max_grip_executed": 35.54680252075195
+      },
+      {
+        "installed_wall_time": 1792457834.2294307,
+        "observed_at": 460554.6247624,
+        "offset": 10.0998869635755,
+        "max_source_index": 24,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 35.655775393899724
+      },
+      {
+        "installed_wall_time": 1792457834.8404315,
+        "observed_at": 460555.2805766,
+        "offset": 9.5,
+        "max_source_index": 23,
+        "first_predicted_open_index": 44,
+        "max_grip_executed": 35.610679626464844
+      },
+      {
+        "installed_wall_time": 1792457835.4359424,
+        "observed_at": 460555.808961,
+        "offset": 11.0,
+        "max_source_index": 25,
+        "first_predicted_open_index": 46,
+        "max_grip_executed": 36.54926681518555
+      },
+      {
+        "installed_wall_time": 1792457836.1167982,
+        "observed_at": 460556.3367897,
+        "offset": 12.430826956904184,
+        "max_source_index": 26,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 35.15285028357745
+      },
+      {
+        "installed_wall_time": 1792457836.6420155,
+        "observed_at": 460556.9778605,
+        "offset": 11.5,
+        "max_source_index": 25,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 35.17126274108887
+      },
+      {
+        "installed_wall_time": 1792457837.3223073,
+        "observed_at": 460557.600703,
+        "offset": 11.0,
+        "max_source_index": 25,
+        "first_predicted_open_index": 43,
+        "max_grip_executed": 33.79592514038086
+      },
+      {
+        "installed_wall_time": 1792457838.131459,
+        "observed_at": 460558.4839393,
+        "offset": 7.759730055602972,
+        "max_source_index": 21,
+        "first_predicted_open_index": 45,
+        "max_grip_executed": 35.49403941255017
+      },
+      {
+        "installed_wall_time": 1792457839.1517074,
+        "observed_at": 460559.3453734,
+        "offset": 11.076837828746307,
+        "max_source_index": 25,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 36.04121590251916
+      },
+      {
+        "installed_wall_time": 1792457839.7984192,
+        "observed_at": 460560.2734628,
+        "offset": 8.0,
+        "max_source_index": 22,
+        "first_predicted_open_index": 44,
+        "max_grip_executed": 34.19055672753462
+      },
+      {
+        "installed_wall_time": 1792457840.5802848,
+        "observed_at": 460560.8810601,
+        "offset": 8.692469675191205,
+        "max_source_index": 22,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 32.57669571499816
+      },
+      {
+        "installed_wall_time": 1792457841.1260157,
+        "observed_at": 460561.3767201,
+        "offset": 14.10728522095269,
+        "max_source_index": 28,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 33.28029809355847
+      },
+      {
+        "installed_wall_time": 1792457841.8897321,
+        "observed_at": 460562.2591112,
+        "offset": 6.0,
+        "max_source_index": 20,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 33.69102478027344
+      },
+      {
+        "installed_wall_time": 1792457842.712735,
+        "observed_at": 460563.1863555,
+        "offset": 8.19497751512904,
+        "max_source_index": 22,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 33.94372920850624
+      },
+      {
+        "installed_wall_time": 1792457843.5884433,
+        "observed_at": 460563.9847932,
+        "offset": 6.0,
+        "max_source_index": 20,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 33.84066390991211
+      },
+      {
+        "installed_wall_time": 1792457844.4486392,
+        "observed_at": 460564.8487681,
+        "offset": 6.0,
+        "max_source_index": 20,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 33.344839096069336
+      },
+      {
+        "installed_wall_time": 1792457845.1800005,
+        "observed_at": 460565.3771782,
+        "offset": 11.817250344942181,
+        "max_source_index": 25,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 32.79169348456081
+      },
+      {
+        "installed_wall_time": 1792457846.0479207,
+        "observed_at": 460566.5285434,
+        "offset": 7.5,
+        "max_source_index": 11,
+        "first_predicted_open_index": null,
+        "max_grip_executed": 32.993303298950195
+      }
+    ]
+  },
+  "counterfactual": [
+    {
+      "post_close_grip_max_pp": 40.923095703125,
+      "post_close_open_over45_cycles": 0,
+      "post_close_first_open_s_from_model_control": null,
+      "grip_samples_video_seconds": {
+        "14": 35.226,
+        "20": 33.329,
+        "25": 33.103,
+        "26": 35.601,
+        "30": 31.886,
+        "35": 35.816,
+        "40": 33.096,
+        "44": 32.374
+      },
+      "horizon": 15,
+      "max_grip_pp": 56.29463195800781,
+      "open_over45_cycles": 502,
+      "first_open_s_from_model_control": 0.0,
+      "max_source_index": 27,
+      "installs": 45,
+      "max_body_step_deg": 0.2500000000000002,
+      "max_body_feedback_error_deg": 0.3571427690990383,
+      "queue_empty_cycles": 0,
+      "watchdog_cycles": 0,
+      "progress": 660.8843142396937
+    },
+    {
+      "post_close_grip_max_pp": 49.630057297157606,
+      "post_close_open_over45_cycles": 35,
+      "post_close_first_open_s_from_model_control": 35.976190600020345,
+      "grip_samples_video_seconds": {
+        "14": 34.874,
+        "20": 34.211,
+        "25": 32.777,
+        "26": 33.252,
+        "30": 33.013,
+        "35": 36.956,
+        "40": 38.335,
+        "44": 33.546
+      },
+      "horizon": 30,
+      "max_grip_pp": 56.310971250642396,
+      "open_over45_cycles": 565,
+      "first_open_s_from_model_control": 0.0,
+      "max_source_index": 43,
+      "installs": 24,
+      "max_body_step_deg": 0.2500000000000018,
+      "max_body_feedback_error_deg": 0.35714279202805876,
+      "queue_empty_cycles": 0,
+      "watchdog_cycles": 0,
+      "progress": 709.0
+    },
+    {
+      "post_close_grip_max_pp": 49.19741439819336,
+      "post_close_open_over45_cycles": 53,
+      "post_close_first_open_s_from_model_control": 31.29894670000067,
+      "grip_samples_video_seconds": {
+        "14": 40.988,
+        "20": 35.577,
+        "25": 34.813,
+        "26": 33.758,
+        "30": 34.41,
+        "35": 35.17,
+        "40": 40.341,
+        "44": 34.064
+      },
+      "horizon": 50,
+      "max_grip_pp": 55.78313446044922,
+      "open_over45_cycles": 585,
+      "first_open_s_from_model_control": 0.0,
+      "max_source_index": 49,
+      "installs": 17,
+      "max_body_step_deg": 0.25,
+      "max_body_feedback_error_deg": 0.35714285682360725,
+      "queue_empty_cycles": 0,
+      "watchdog_cycles": 0,
+      "progress": 702.4758791540506
+    }
+  ]
+}

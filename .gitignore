@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+cache/
+tmp/
+logs/
+outputs/
+captures/
+models/
+datasets/
+configs/local-hardware-confirmed.json
+.env
+*.token

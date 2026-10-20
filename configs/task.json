@@ -1,0 +1,27 @@
+{
+  "task_id": "yellow_nut_to_brown_tray",
+  "task": "Pick up the yellow nut and place it into the brown tray.",
+  "task_chinese": "\u5939\u53d6\u4e00\u4e2a\u9ec4\u8272\u87ba\u6bcd\u5e76\u653e\u5165\u524d\u65b9\u7684\u68d5\u8272\u76d8\u4e2d\u3002",
+  "task_english": "Pick up the yellow nut and place it into the brown tray.",
+  "colors": [
+    "yellow"
+  ],
+  "objects_per_episode": 1,
+  "episode_definition": "One uninterrupted demonstration picking up the single yellow nut and releasing it inside the brown tray.",
+  "start_event": "Yellow nut outside tray; yellow nut, gripper and destination visible; operator ready before first task movement.",
+  "end_event": "Yellow nut released inside brown tray, gripper withdrawn and successful scene held visibly for1-2seconds.",
+  "success_criterion": "The yellow nut is inside the tray after release, without manual assistance during recording.",
+  "reset": "Restore yellow nut outside tray between episodes, outside recording.",
+  "scene": "Only one yellow nut and the target brown tray in the working scene; remove red/white nuts and unrelated trays.",
+  "task_root": "D:\\so-101\\datasets\\yellow_nut_to_brown_tray",
+  "default_phase": "trial",
+  "format": "LeRobotDataset v3.0",
+  "software_version": "LeRobot 0.6.1",
+  "language_note": "Record one consistent English instruction for SmolVLA; show Chinese task to operator.",
+  "collection_plan": {
+    "successful_episodes_initial_target": 50,
+    "layouts": 5,
+    "episodes_per_layout": 10
+  },
+  "created": "2026-10-18T18:07:15.323495+08:00"
+}

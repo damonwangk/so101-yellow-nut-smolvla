@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "dataset_episodes": 50,
+  "dataset_frames": 29570,
+  "model_inference_checked": true,
+  "robot_io_opened": false,
+  "prediction_shape": [
+    50,
+    6
+  ],
+  "inference_seconds": 1.1516341000096872,
+  "forbidden_calls": {
+    "serial": 0,
+    "bus": 0,
+    "camera": 0
+  }
+}

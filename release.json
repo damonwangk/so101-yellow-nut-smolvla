@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "controller_version": "trajectory-phase-v7",
+  "model": {
+    "repo_id": "wang2065186103/so101-yellow-nut-smolvla",
+    "allow_patterns": [
+      "*.json",
+      "*.safetensors",
+      "tokenizer/*"
+    ],
+    "revision": null,
+    "github_asset": {
+      "name": "so101-yellow-nut-model-005000.zip",
+      "sha256": "7683cc4122fc55ec3a3a3260cbc72e2e51ac7c0847893d14eb250f03c153e4e4",
+      "bytes": 1202671356,
+      "url": "https://github.com/damonwangk/so101-yellow-nut-smolvla/releases/download/v1.0.0/so101-yellow-nut-model-005000.zip"
+    }
+  },
+  "dataset": {
+    "repo_id": "wang2065186103/so101-yellow-nut-to-brown-tray",
+    "allow_patterns": [
+      "data/*",
+      "meta/*",
+      "videos/*"
+    ],
+    "revision": null,
+    "github_asset": {
+      "name": "so101-yellow-nut-dataset-v3.zip",
+      "sha256": "f6660644a26b03b5aa9e38e433aa91138ae5196cefed81e2148842e56697819f",
+      "bytes": 201770237,
+      "url": "https://github.com/damonwangk/so101-yellow-nut-smolvla/releases/download/v1.0.0/so101-yellow-nut-dataset-v3.zip"
+    }
+  },
+  "github": "https://github.com/damonwangk/so101-yellow-nut-smolvla",
+  "evidence": "Operator reported successful reference-rig task on 2026-10-20; not a statistical success rate."
+}
