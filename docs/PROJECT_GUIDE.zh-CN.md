@@ -356,7 +356,7 @@ Pick up the yellow nut and place it into the brown tray.
 
 作者校准只作参考，不可直接应用到另一台机械臂。ConfigureHardware导入使用者已经校准并验证过的工作目录并记录哈希，不运行控制；其他设备的坐标范围、USB身份与起点必须适配。实机仍采用本地两次Enter；新采数据写入`captures/`，与下载数据隔离。训练入口新建时间戳目录，不覆盖参考检查点。
 
-**2026-10-20公开发布完成。** 采用Mac中转和已登录网页上传HF、Mac已有GitHub CLI登录发布；公司Windows未登录发布账号、未保存发布令牌。Mac中转副本与Windows发布副本逐文件SHA-256一致，未在Mac安装或运行机械臂环境。
+**2026-10-20公开发布完成。** 采用Mac中转；HF首批文件由已登录网页上传，追加演示通过Mac上由用户完成登录的HF CLI上传，GitHub使用Mac已有CLI登录发布；公司Windows未登录发布账号、未保存发布令牌。Mac中转副本与Windows发布副本逐文件SHA-256一致，未在Mac安装或运行机械臂环境。
 
 | 验收对象 | 固定原生文件版本 / 结果 |
 |---|---|
