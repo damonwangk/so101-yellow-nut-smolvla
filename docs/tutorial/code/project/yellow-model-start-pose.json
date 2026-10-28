@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "coordinate_frame_version": 3,
+  "target": {
+    "shoulder_pan.pos": -5.274725437164307,
+    "shoulder_lift.pos": -77.0988998413086,
+    "elbow_flex.pos": -0.48351648449897766,
+    "wrist_flex.pos": 87.56044006347656,
+    "wrist_roll.pos": -1.890109896659851,
+    "gripper.pos": 52.147239685058594
+  },
+  "source": {
+    "episode": 22,
+    "frame": 0,
+    "split": "train",
+    "data_path": "datasets/yellow_nut_to_brown_tray/formal/lerobot/data/chunk-000/file-022.parquet",
+    "data_sha256": "26fa24bef0bf7aa77c2df462af683683a60f61285799495e9e54f2748ebb9b0e"
+  },
+  "selection": "Actual observed frame-0 pose minimizing mean normalized L1 distance to 45 training starts; only in-bounds, open-gripper candidates. No jointwise synthetic average.",
+  "control_config_sha256": "4c33585965c7dc0f94e512f0dc7633c98bbb09aca040dd4c0502bf6ccb3cbe68",
+  "reference_image": "configs/yellow-model-start-reference.jpg",
+  "body_tolerance_deg": 1.0,
+  "settle_seconds": 0.5,
+  "stall_seconds": 3.0,
+  "start_requires_second_enter": true
+}

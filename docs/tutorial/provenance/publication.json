@@ -1,0 +1,403 @@
+{
+  "publication_date": "2026-10-28",
+  "content_baseline": "2026-10-22",
+  "repository": "https://github.com/damonwangk/so101-yellow-nut-smolvla",
+  "format": "GitHub-flavored Markdown,21 chapters,static SVG/JPEG and Mermaid; original interactive HTML archived in Release",
+  "offline_release_tag": "tutorial-v1.0",
+  "original_md_sha256": "568e46894dd3153f8a07290d9e1bd014de492ac309ce49cb1308db1b4ea66cac",
+  "chapters": 21,
+  "interactive_panels_preserved_as_static": 21,
+  "learning_goals": 21,
+  "chapter_self_checks": 21,
+  "code_snapshot_files": 31,
+  "checked_relative_links": 288,
+  "broken_links": [],
+  "hardware_capture_training_model_inference_started": false,
+  "original_source_not_modified": true,
+  "files": {
+    "README.md": {
+      "bytes": 4987,
+      "sha256": "1fe35e576f45a64da2ee9b6d9cf6e06269bb009c54de7a8c8b03b5bfcb774646"
+    },
+    "assets/batch/episode22-frame0000.jpg": {
+      "bytes": 33336,
+      "sha256": "989bf05f6a9540312c88106b9858e49f67b43053f52d2f8c1b0c715ac1dd5e8c"
+    },
+    "assets/batch/episode22-frame0030.jpg": {
+      "bytes": 35756,
+      "sha256": "0c0a199acab3b38c3beba9a1dd35cb51ff70b1133438a09304a9a31431778c4e"
+    },
+    "assets/batch/episode22-frame0060.jpg": {
+      "bytes": 34693,
+      "sha256": "809d76d548954e29df6d23103d782abf091604e216035d4488c1fd4aa42c5a4b"
+    },
+    "assets/batch/episode22-frame0120.jpg": {
+      "bytes": 35561,
+      "sha256": "ad1eb76152e27e8bdf98a2ad81eb77c758623d04e1666dda3c4ca6f628bc4e0f"
+    },
+    "assets/batch/episode22-frame0180.jpg": {
+      "bytes": 36275,
+      "sha256": "bce2a7ddb573e4f5271a8f49d95d3ee226781d2f376134815b5645e73934e796"
+    },
+    "assets/batch/episode22-frame0245.jpg": {
+      "bytes": 38904,
+      "sha256": "c120a310836e85fe3727ee0cd02bcbd1cc4a16684c024364a26c8cd583179e6c"
+    },
+    "assets/batch/episode22-frame0440.jpg": {
+      "bytes": 42910,
+      "sha256": "843d8fd401e2c0b6e6ae85a9219b61448bd6190ea3d93d63ccd3cc194575cce2"
+    },
+    "assets/batch/episode22-frame0480.jpg": {
+      "bytes": 43415,
+      "sha256": "af71ef96c0d23ae761d463f12e4e4fb4d2231d7df806741b3c8a00dfd0f61e5e"
+    },
+    "assets/batch-real.json": {
+      "bytes": 246460,
+      "sha256": "81f861120c6ce3572c8675ee9d6917a554e8e8052b9d29909cdcc47d345ea8d8"
+    },
+    "assets/demo-manifest.json": {
+      "bytes": 1654,
+      "sha256": "c25e11c3b2f5432f565015f639c6054e8eaf17d36fd9d7125d35c41f510af6f3"
+    },
+    "assets/initial-setup.jpg": {
+      "bytes": 487424,
+      "sha256": "d160359b653e5eb1374e5a6d3891d7a06849db84d01362fdde8e3a5856d69d56"
+    },
+    "assets/official/attention-numeric-example.svg": {
+      "bytes": 3436,
+      "sha256": "60a5ab6101e118fa3a8e623b6ae0baa3a1a7f9c347298ed8547a766ce4b69ce0"
+    },
+    "assets/official/flow-matching-scalar-example.svg": {
+      "bytes": 3897,
+      "sha256": "545ec9fcb0cceffc7732da829866fb281724186e5af44d464786f40746978a41"
+    },
+    "assets/official/manifest.json": {
+      "bytes": 1055,
+      "sha256": "a07720fc3275f69f7399ae96e8a7d77f86a1e80fa30dc1fab90c90c1a2537ec2"
+    },
+    "assets/official/smolvla-architecture-teaching.svg": {
+      "bytes": 8265,
+      "sha256": "4f7c4962ecc747cb139de5e1189951385e09887095ef5906492abd3f36a5cd5a"
+    },
+    "assets/official/visual-token-compression.svg": {
+      "bytes": 30017,
+      "sha256": "e622537d8666b5d1e1f8fe947e553e4457803a17cc23e0981092aa539fe3d9c4"
+    },
+    "assets/official/来源与许可.md": {
+      "bytes": 4694,
+      "sha256": "7371289a42f7c4548f664f0a152bbd36ed1081c939fd21e393be70c9cde137b0"
+    },
+    "assets/plots/episode22-action-window.svg": {
+      "bytes": 102208,
+      "sha256": "ab8e67958172dd4681071e49bbee9717ff5707ce7c5cf99c0df03c8014027cc9"
+    },
+    "assets/plots/timing-drift.svg": {
+      "bytes": 62589,
+      "sha256": "e65efc7b6d08c16dbcd5d0e67d1bc8abf144a763379432598a6858905a294e85"
+    },
+    "assets/plots/validation-loss.svg": {
+      "bytes": 42374,
+      "sha256": "b0ce0de9bb641dd1f22a3c6de9e3a2fdca3c8d05508a67778a971f248a3f0fc4"
+    },
+    "assets/qc-lessons.json": {
+      "bytes": 6649,
+      "sha256": "c794c4617300691d839f36f1978aea824debffa26d2789c5760f396e721689af"
+    },
+    "assets/screenshots/推理与持续发送.jpg": {
+      "bytes": 168538,
+      "sha256": "10ef5b7f1f05b167d82fb88b4a43358666f751435614b03e4de74997a8068716"
+    },
+    "assets/screenshots/真实频率与时间对齐.jpg": {
+      "bytes": 151883,
+      "sha256": "72399d5c280fda7f3e1e5dcb902c7fdac2bde123e16a0cf06da9661b2716d70c"
+    },
+    "assets/success-poster.jpg": {
+      "bytes": 66438,
+      "sha256": "593e3bab4da3a51b06c4cefc898dc71f3a62bc86c6c7a8eaab6131729ad0a5c5"
+    },
+    "assets/timing/capture-to-policy.svg": {
+      "bytes": 8440,
+      "sha256": "669197f87cac73d2748ea1820633ad80b3b6319f8f6b882d3ef245b12d750210"
+    },
+    "assets/timing/manifest.json": {
+      "bytes": 575,
+      "sha256": "bca151b401ff551272cd3c7433fc3848368b05b4a59f056f7dfd3adb499f7937"
+    },
+    "assets/timing/来源与说明.md": {
+      "bytes": 919,
+      "sha256": "b922d1430ed44be9ea5b8a9f433ac99a1216a5b814823da803fa6a072257080f"
+    },
+    "assets/timing-real.json": {
+      "bytes": 4343879,
+      "sha256": "7342a171e2e7719eaeb4b8e744beaecb85df6fd673b0d7409612beb675f132e2"
+    },
+    "assets/training-episode22-start.jpg": {
+      "bytes": 46992,
+      "sha256": "00ab12d19e7feef3980e5965a71e97284892b4e8eeb5f0a56a2d96f4b7fc0f4d"
+    },
+    "assets/真实数据样例.json": {
+      "bytes": 5777,
+      "sha256": "59b5d5d83a657a303d87feaffe087b6a93168e7670431773b2985e52af03bc7e"
+    },
+    "assets/真实训练指标.json": {
+      "bytes": 113306,
+      "sha256": "389f422b983fd628b4368861a8e30ba584c8e5e2b99d74ee4a9d29341aa384a2"
+    },
+    "chapters/00-overview.md": {
+      "bytes": 3215,
+      "sha256": "4e3b2539ae24515e769a5bd0a75d8209d73d187a3da28ab3955514dfbc0807b5"
+    },
+    "chapters/01-roadmap.md": {
+      "bytes": 14844,
+      "sha256": "80d85a1004b61a06ff771d1959c94510cfbb8ca0084ae3a5ed9986530ee7ebb6"
+    },
+    "chapters/02-setup.md": {
+      "bytes": 4567,
+      "sha256": "33b161ff5031b6b54bd6035eb64fb20a02463296fb989df7e7eb6819ee48f1fc"
+    },
+    "chapters/03-capture.md": {
+      "bytes": 4482,
+      "sha256": "3eb531485880b5c219fe4fa85f46805c48829836015a1f3f0d96f41ac123edcb"
+    },
+    "chapters/04-timing.md": {
+      "bytes": 31010,
+      "sha256": "f0e0a6287218276b143b52dae1899dc8828e1da23095b8586fe273a1f40b2431"
+    },
+    "chapters/05-format.md": {
+      "bytes": 4617,
+      "sha256": "81ffcdef3fbb1d22a83a6f2f6ea1449166b382721628dd2dea1c13beafe21c0c"
+    },
+    "chapters/06-data-engineering.md": {
+      "bytes": 23004,
+      "sha256": "11fc8bb695aace76888a00085962b1e1238aa1661b9f567dc7e960d5e876d1c9"
+    },
+    "chapters/07-dataset.md": {
+      "bytes": 3927,
+      "sha256": "a1cc9b60abe706e18f6ae56e2e2b9b212ac6ac7f657ac154167cb2785759196f"
+    },
+    "chapters/08-batch-lab.md": {
+      "bytes": 21645,
+      "sha256": "25c007e2acdb94de67989270f01b763ee8d56064fa0d2b687f0b7fc7c9cc8915"
+    },
+    "chapters/09-foundations.md": {
+      "bytes": 16550,
+      "sha256": "7e1b91a02d9192608bb38a7303ade5fd4935bb44f2453c30eaaa2bcd5bf37637"
+    },
+    "chapters/10-architecture.md": {
+      "bytes": 16657,
+      "sha256": "8ca76ddeaefe5b0bcf3f6f07680cab08c1010e072a1d3ac31980add2f2404e66"
+    },
+    "chapters/11-forward.md": {
+      "bytes": 4437,
+      "sha256": "5497f4ccc6d06ef67e1f4d30e5bc9d566d86113eaf0ac33362bb655781017b8a"
+    },
+    "chapters/12-flow.md": {
+      "bytes": 6700,
+      "sha256": "a7a89dc6ed64ff2949b7fd68abc1a2df445accfc7b4871a18c447e50b29d3ad3"
+    },
+    "chapters/13-training.md": {
+      "bytes": 4033,
+      "sha256": "e6de42ddea18f808e3e7e686bbec19e38a87ce0e917b8ef3e2665dfc41300ab8"
+    },
+    "chapters/14-evaluation.md": {
+      "bytes": 4785,
+      "sha256": "b0e9a6dcfeccb9dc7847e26f3683a86754955570322af2235fc9535e388b52de"
+    },
+    "chapters/15-deployment.md": {
+      "bytes": 4671,
+      "sha256": "8f745b24c921dbaa952bb9da1eb31f96a6ccb4ad2ec6a58da847168b4f2d0411"
+    },
+    "chapters/16-execution.md": {
+      "bytes": 7914,
+      "sha256": "b99701bda164558fe43f4a14c54961446f6f987842fda69c42fa1b20e5247c11"
+    },
+    "chapters/17-homing.md": {
+      "bytes": 4860,
+      "sha256": "203430d9025de66a9e69f8bb7014d8a870fd2882caf263e35b81d3a24561fd02"
+    },
+    "chapters/18-pitfalls.md": {
+      "bytes": 3482,
+      "sha256": "0a9b5f9ada388273b297ca0d1b877190af585c26e2b24ebc2cc4bdc0dd9ae3ab"
+    },
+    "chapters/19-reproduce.md": {
+      "bytes": 4185,
+      "sha256": "193f73b873361fe1133eb2e9956009f8da668f27838d91b2f08b149628ba0f28"
+    },
+    "chapters/20-sources.md": {
+      "bytes": 7564,
+      "sha256": "7bf554fdde2ebe460dc5bc8d6db2ec7a94c9a93ef5d861ba6ab41ac46ef6f37b"
+    },
+    "code/LICENSE": {
+      "bytes": 28134,
+      "sha256": "b1573f6d552b494f1bac1116d2373daca84ac29f7e7f75ac65a13e41cde029cc"
+    },
+    "code/lerobot/camera_opencv.py": {
+      "bytes": 25695,
+      "sha256": "5a89d7e04438b441900a11b7ff5a4fb654d5a81504cb9b42464ec012c56d1046"
+    },
+    "code/lerobot/configuration_smolvla.py": {
+      "bytes": 5934,
+      "sha256": "2fb637cb428fa2fdf1d114646dcffaf4728216bfe5b7039d5d0cac4857ffc4e0"
+    },
+    "code/lerobot/dataset_reader.py": {
+      "bytes": 14991,
+      "sha256": "3a477dae6aa887449f09be25b385485b065861d13c5448b9369a0ba09f01bb5d"
+    },
+    "code/lerobot/flow_matching.py": {
+      "bytes": 4869,
+      "sha256": "cddf14a9114b82c74de52ca30367acc5e0726a3c005b29bcf4eea2c1b126ce59"
+    },
+    "code/lerobot/lerobot_dataset.py": {
+      "bytes": 41472,
+      "sha256": "07523e2a4f9c53b6a96df9255ad131ee30e707fd8610ec9d2178d3741023ae3a"
+    },
+    "code/lerobot/lerobot_teleoperate.py": {
+      "bytes": 10377,
+      "sha256": "2f2b2a9bb822d1b33b0033e9a2b0664649f959ef7da45d48629368a63ff9cf1a"
+    },
+    "code/lerobot/lerobot_train.py": {
+      "bytes": 36453,
+      "sha256": "059bda054bbb188d4a40d0a32941aa4d9ac59252a37d67a258e685a0a6d063ec"
+    },
+    "code/lerobot/modeling_smolvla.py": {
+      "bytes": 32694,
+      "sha256": "37b1d56f37510732a087cf5c32c05cd15d6234201a3f002f108ec4c53438cc7d"
+    },
+    "code/lerobot/processor_smolvla.py": {
+      "bytes": 2822,
+      "sha256": "b28e31c7b97c564edc6ad1aabe451fb59931b406ff7a6ed1fdff9d1af365d7ec"
+    },
+    "code/lerobot/smolvlm_with_expert.py": {
+      "bytes": 23775,
+      "sha256": "996d3b0c713c0ed42b383aa2cf89b2e6f9868e337747c480a64adaecdc1073cf"
+    },
+    "code/lerobot/utils.py": {
+      "bytes": 10262,
+      "sha256": "237900903871bf8f738997b2a1c676d3e730b0d188c901cce13b9fa8e4b1690c"
+    },
+    "code/lerobot/vla_utils.py": {
+      "bytes": 9420,
+      "sha256": "4480fbc90da0f181dab02ac2863567a157c9b2c7d51024945a695a2c8dbbadf8"
+    },
+    "code/project/configure_hardware.py": {
+      "bytes": 1808,
+      "sha256": "5313b03db93ddc073a1c706c914d0ea8d62a926e4400960a98d7e3d776dd01e8"
+    },
+    "code/project/download_assets.py": {
+      "bytes": 3149,
+      "sha256": "5695433733aed86a4a7d502c765df60be8d6b42156260a39d649044e6e781fbb"
+    },
+    "code/project/environment.ps1": {
+      "bytes": 602,
+      "sha256": "54379fb063a2ec40e6be2e172fa37b54bc98d5647cc995567cfc5b51b144dc20"
+    },
+    "code/project/explain_real_batch.py": {
+      "bytes": 13805,
+      "sha256": "f6ffcea64976b35d0227e4570f6d4f25b5f1cb527a60aa302f6fb1bf50a5dedc"
+    },
+    "code/project/explain_saved_timing.py": {
+      "bytes": 7461,
+      "sha256": "eebc7453e51f3c52e1d4e078e073ac6d5aadfc888bb2a89f8dca7b52a92454eb"
+    },
+    "code/project/follow-practical.py": {
+      "bytes": 19968,
+      "sha256": "15cf95251f3646243371d383e28a183bf3dc03f440b4ab40c5017dbcd0c17246"
+    },
+    "code/project/practical-follow.json": {
+      "bytes": 3906,
+      "sha256": "4c33585965c7dc0f94e512f0dc7633c98bbb09aca040dd4c0502bf6ccb3cbe68"
+    },
+    "code/project/prepare_training.py": {
+      "bytes": 790,
+      "sha256": "66ef9845da6c01d8cf8d64f2fe46374c6a6f032ff64357261a10f8ed7cab7d8b"
+    },
+    "code/project/record-so101.py": {
+      "bytes": 55679,
+      "sha256": "735e4b16b445985b680d6fc9c29ee2a7e27b9e8a93311b97fb76d3b9b87e82f6"
+    },
+    "code/project/release_offline_check.py": {
+      "bytes": 3530,
+      "sha256": "1010fe4ad397379747db409bc152d8b23d4ce1c791d8cf887e519fd09c471432"
+    },
+    "code/project/requirements-windows.lock.txt": {
+      "bytes": 1604,
+      "sha256": "12ecf9d4a00158a4c17dee74f3d36c6ee2942f9dfec1b482552e4c8d67cab8da"
+    },
+    "code/project/run.ps1": {
+      "bytes": 2203,
+      "sha256": "8e80086f57ce679ac9ca0106f4acfb99f39ca001bb950f866503da5b47437f3c"
+    },
+    "code/project/so101_paths.py": {
+      "bytes": 899,
+      "sha256": "9b82a239d4db1f72049a60a6262d9499ae90622720eb3199a0eeaf498c8a42c7"
+    },
+    "code/project/test-yellow-smolvla-robot.py": {
+      "bytes": 26917,
+      "sha256": "12103e89cb9b5245c70e2a597855e9f0280db7b8ce684a684c4bf372319c2ad7"
+    },
+    "code/project/train-yellow-smolvla.py": {
+      "bytes": 13327,
+      "sha256": "75710b0dea7dcea635000c99ef1c6df33c72ad7af8174af020c43df5167e6f47"
+    },
+    "code/project/training-reference.json": {
+      "bytes": 1566,
+      "sha256": "17b8bdfcc635f6b7166e42d36299d1e5b3c0052616135cda67ad4d5515fa2eeb"
+    },
+    "code/project/yellow-model-start-pose.json": {
+      "bytes": 1070,
+      "sha256": "fc1befb0237e14ecf1fb8348a5b0cb1593a7ee0137ece891dbf1d738b2cbb1d4"
+    },
+    "code/project/yellow_action_queue.py": {
+      "bytes": 7440,
+      "sha256": "9528629a5e9254916050e64aa364b92fd9f62a425b9920a85044cff102731bab"
+    },
+    "code/project/yellow_start_pose.py": {
+      "bytes": 3780,
+      "sha256": "61ad007c457f1ee3ea85ce26db767bbf2873108564facc0d9b7573fbdf9f9b49"
+    },
+    "provenance/local-tutorial-sources.json": {
+      "bytes": 3910,
+      "sha256": "b3ef0c830843d2815d32251c6dae49ee4a9cd3775ce6cd5ffc45f7a6366a90ed"
+    },
+    "provenance/时间图表数值核对.json": {
+      "bytes": 815,
+      "sha256": "e44a9d5ca9035c2af0b7b4ef4daaed4182629a357af0adb74e751bd39c306f65"
+    },
+    "provenance/时间证据源哈希.json": {
+      "bytes": 48617,
+      "sha256": "cb59af45b78b3417e9b44f50b42a157c65180009f6c4c0db11a8381ef024b868"
+    },
+    "provenance/真实batch数值核对.json": {
+      "bytes": 530,
+      "sha256": "8e019909445ffca3d88412491f8c189f77a98b5bbab35ea338391eef672734a7"
+    },
+    "provenance/阅读验收-v3.json": {
+      "bytes": 3008,
+      "sha256": "0ae1f4c24d7805da675fac55d59fe1699041902997ee24800ed559fbdd49952e"
+    },
+    "provenance/静态检查-v3.json": {
+      "bytes": 141,
+      "sha256": "c75550b410f2edd78b7e01068e394493b3ea7d32051fbc993f6ee6412f0a2a79"
+    },
+    "references/数据验收报告.md": {
+      "bytes": 9525,
+      "sha256": "17c9efd0d02bd502bc02b89a47463de73bd6b52b5cd1b96493b78e822171a79e"
+    },
+    "references/机械臂项目记录.md": {
+      "bytes": 51605,
+      "sha256": "47cb0eb6847fc6643da83cda33af9e062a8abc081681984adf754d3d95deb41c"
+    },
+    "references/第5000步模型离线检查.md": {
+      "bytes": 5011,
+      "sha256": "01df40b767afedead88d6af5d288b98ca5799d3c4cd7c05d234071d095f8e2b8"
+    },
+    "references/黄色螺母模型实机测试说明.md": {
+      "bytes": 7039,
+      "sha256": "8972cc1fce846fd08dc894ee3ad47e36f61d7c95e0ba386b8d5590d5b2605fd6"
+    },
+    "references/黄色螺母训练流程.md": {
+      "bytes": 6556,
+      "sha256": "4e90186547d5a83f16764f23d1954dafb9537573f95f93b741e5b6ff70d15ff9"
+    }
+  }
+}

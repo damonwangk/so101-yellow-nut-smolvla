@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-22",
+  "status": "passed",
+  "chapters": 21,
+  "code_reading_pages": 31,
+  "goals_and_chapter_self_checks": 21,
+  "new_chapter": "04 timing",
+  "static": {
+    "date": "2026-10-22",
+    "html_pages": 37,
+    "links_checked": 8329,
+    "broken": [],
+    "duplicate_main_ids": [],
+    "md_copy_equal": true
+  },
+  "timing_numeric": {
+    "date": "2026-10-22",
+    "formal_episodes": 50,
+    "saved_frames": 29570,
+    "episode22_frames": 490,
+    "timestamp_formula_max_abs_error_ms": 0,
+    "batch_values_f32_equal": 2448,
+    "source_files_before_after_unchanged": 105,
+    "source_hashes_unchanged": true,
+    "frame12_send_after_camera_ms": 5.5763000273145735,
+    "frame245_state_minus_camera_ms": -3.987800038885325,
+    "frame245_send_minus_camera_ms": -2.531500009354204,
+    "episode22_last_drift_ms": -124.02890000958067,
+    "execution_control_events": 3589,
+    "model_control_events": 2611,
+    "model_event_hz": 58.01451987405871,
+    "predictions": 151,
+    "first_prediction_envelope_ms": 369.4905000156723,
+    "first_prediction_compute_ms": 342.6028999965638,
+    "first_prediction_control_events": 21,
+    "model_forward_started": false,
+    "hardware_started": false
+  },
+  "browser_checks": {
+    "desktop": "1440x1000 and1440x1100 inspected; no document horizontal overflow; actual frame12 and245 read/send intervals visible",
+    "mobile": "390x844; document width390; timing charts328px viewport/760px content, local horizontal keyboard scrolling verified to320px; numeric readout reflows",
+    "alignment": "presets before/after and245; next246 then previous245 verified; raw JSON disclosure expanded",
+    "drift": "frame489:16.175971 actual vs16.3 nominal, -124.029ms; gap frame144:50.044ms",
+    "inference": "first event369.491ms envelope,342.603ms predict,21 control events; last151st274.089ms envelope,263.456ms predict,16 events. Accepted candidate wording explicit",
+    "original_batch": "8 thumbnails and batch fixture unchanged;2448 state/actionvalues exactly match timing source afterfloat32 conversion",
+    "reduced_motion": "tested with reduce; no new auto-motion or hardware actions; emulation reset",
+    "console_js_errors": [],
+    "emulation_restored": true,
+    "preview_tab_kept_open_at_new_chapter": true
+  },
+  "mac_windows_canonical_md_sha256": "0c192d247c6596c0a22def7320cdc9c850dbe61ec81c0e812b1819607f204d24",
+  "windows_md_hash_verified_equal": true,
+  "no_hardware_capture_training_model_forward_started": true,
+  "raw_data_and_existing_code_preserved": true,
+  "public_platforms_modified": false,
+  "verification_boundary": "Static local resources rendered using localhost-only HTTP preview. Browser policy disallows automated file:// navigation; direct file opening was not automated. Counts/rates are source-event statistics, not exposure, motor internal sampling, physical command onset, exact GPU timings or new live measurements.",
+  "screenshots": [
+    "真实频率与时间对齐.jpg",
+    "推理与持续发送.jpg"
+  ]
+}

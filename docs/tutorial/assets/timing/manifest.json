@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-22",
+  "figure": {
+    "file": "capture-to-policy.svg",
+    "sha256": "669197f87cac73d2748ea1820633ad80b3b6319f8f6b882d3ef245b12d750210",
+    "license": "Apache-2.0; original structural diagram"
+  },
+  "real_data": {
+    "file": "../timing-real.json",
+    "sha256": "7342a171e2e7719eaeb4b8e744beaecb85df6fd673b0d7409612beb675f132e2",
+    "scope": "saved data and logs only; no new recording or policy forward"
+  },
+  "limitations": "No exposure timestamps, full60Hz collection history, actuator onset times or exact GPU interval can be reconstructed."
+}

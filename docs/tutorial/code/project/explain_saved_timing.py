@@ -1,0 +1,37 @@
+import json, pathlib, hashlib, statistics, collections
+ROOT=pathlib.Path('D:/so-101');FORMAL=ROOT/'datasets/yellow_nut_to_brown_tray/formal';RUN=ROOT/'evaluations/yellow_nut_to_brown_tray/step005000-20261020T094811'
+sources={}
+def read(p):
+ b=p.read_bytes();sources[str(p)]={'sha256':hashlib.sha256(b).hexdigest(),'bytes':len(b)};return b
+
+def load(p):return json.loads(read(p).decode('utf-8-sig'))
+def lines(p):return [json.loads(x) for x in read(p).decode('utf-8-sig').splitlines() if x.strip()]
+def dist(values):
+ a=sorted(x for x in values if x is not None)
+ def q(f):
+  n=(len(a)-1)*f;i=int(n);return a[i]*(1-(n-i))+a[min(i+1,len(a)-1)]*(n-i)
+ return {'count':len(a),'min':a[0],'p01':q(.01),'p05':q(.05),'p50':q(.5),'p95':q(.95),'p99':q(.99),'max':a[-1],'mean':statistics.fmean(a)} if a else {}
+KEYS=['shoulder_pan.pos','shoulder_lift.pos','elbow_flex.pos','wrist_flex.pos','wrist_roll.pos','gripper.pos']
+allrows=[];episodes=[];ep22=None
+for ep in range(50):
+ d=FORMAL/'episodes'/f'episode_{ep:06d}';rows=lines(d/'alignment.jsonl');frames=[r for r in rows if r.get('event')=='episode_frame'];s=load(d/'recording_summary.json');allrows+=frames
+ c=s['control_timing'];ts=s['sampling_timing'];episodes.append({'episode_index':ep,'frames':len(frames),'sampling_timing':ts,'control_timing':c,'timing':{k:dist([r[k] for r in frames]) for k in ['camera_to_state_ms','camera_to_action_ms','timeline_deviation_ms']}})
+ if ep==22:ep22={'episode_index':22,'summary':s,'frames':frames,'other_events':[r for r in rows if r.get('event')!='episode_frame'],'reference_images':{'0':'assets/batch/episode22-frame0000.jpg','245':'assets/batch/episode22-frame0245.jpg','480':'assets/batch/episode22-frame0480.jpg'}}
+runrows=lines(RUN/'control.jsonl');rsummary=load(RUN/'summary.json');start=next(r['monotonic'] for r in runrows if r.get('event')=='model_started')
+controls=[];preds=[];events=[]
+for r in runrows:
+ if r.get('event')=='control':
+  item={k:v for k,v in r.items() if k not in ['observation','requested','sent']};item.update({k+'6':[r[k][j] for j in KEYS] for k in ['observation','requested','sent']});item['relative_ms']=(r['monotonic']-start)*1000;controls.append(item)
+ elif r.get('event')=='prediction':
+  item={k:v for k,v in r.items() if k not in ['actions']};item['relative_ms']=(r['monotonic']-start)*1000;item['input_anchor_ms']=(r['observed_at']-start)*1000;item['result_logged_ms']=item['relative_ms'];item['compute_duration_ms']=r['inference_s']*1000;item['input_age_at_arrival_ms']=r['arrival_age_s']*1000;item['action_shape']=[len(r['actions']),len(r['actions'][0])]
+  if len(preds)<2:item['actions']=r['actions']
+  preds.append(item)
+ else:events.append({**r,'relative_ms':(r['monotonic']-start)*1000})
+modelcontrols=[r for r in controls if r.get('mode')=='model'];intervals=[(modelcontrols[i]['monotonic']-modelcontrols[i-1]['monotonic'])*1000 for i in range(1,len(modelcontrols))]
+modecounts=dict(collections.Counter(r['mode'] for r in controls))
+qc=load(FORMAL/'qc/acceptance_20261019/technical_summary.json')
+sourcecodes={}
+for label,rel in {'lerobot_teleoperate.py':'.venv/Lib/site-packages/lerobot/scripts/lerobot_teleoperate.py','camera_opencv.py':'.venv/Lib/site-packages/lerobot/cameras/opencv/camera_opencv.py'}.items():sourcecodes[label]={'windows_path':str(ROOT/rel),'text':read(ROOT/rel).decode('utf-8')}
+result={'schema_version':1,'meta':{'created_date':'2026-10-22','scope':'read-only existing files; no devices, model loading, control, collection, training or inference','clock':'time.perf_counter monotonic seconds on same Windows host, within a run; different runs not combined on absolute axis','joint_names':KEYS,'target_control_hz':60,'nominal_dataset_fps':30,'camera_timestamp_semantics':'host frame postprocess receipt; not hardware exposure','state_timestamp_semantics':'follower get_observation call start and return-complete; not simultaneous hardware sample instant','action_timestamp_semantics':'follower send_action call start and return-complete; not motor motion onset','saved_controls_scope':'Only the selected control tuple per saved image is present in alignment.jsonl; full 60 Hz collection cycles were counted, not all persisted','execution_control_timestamp_semantics':'main-process emit time after send_action returns and queue advance; not cycle boundary or actuator onset','execution_prediction_timestamp_semantics':'observed_at = min(state read-complete, camera receipt); prediction.monotonic = main process result retrieval/logging; inference_s times predict only, excludes later JPEG capture and IPC','source_hashes_before':sources.copy()},'summary':{'episodes':episodes,'frames':len(allrows),'camera_interval_ms':dist([r['camera_interval_s']*1000 for r in allrows if r.get('camera_interval_s') is not None]),'camera_to_state_ms':dist([r['camera_to_state_ms'] for r in allrows]),'camera_to_action_ms':dist([r['camera_to_action_ms'] for r in allrows]),'state_read_duration_ms':dist([(r['state_observation_monotonic']-r['state_read_started_monotonic'])*1000 for r in allrows]),'action_send_duration_ms':dist([(r['sent_action_monotonic']-r['action_send_started_monotonic'])*1000 for r in allrows]),'camera_to_state_age_positive_ms':dist([-r['camera_to_state_ms'] for r in allrows]),'selected_action_after_camera_count':sum(r['camera_to_action_ms']>0 for r in allrows),'selected_action_before_or_at_camera_count':sum(r['camera_to_action_ms']<=0 for r in allrows),'reader_frames_skipped':sum(r['reader_frames_skipped_since_previous_sample'] for r in allrows),'camera_fps_per_episode':dist([e['sampling_timing']['sampled_camera_fps_measured'] for e in episodes]),'control_hz_per_episode':dist([e['control_timing']['hz_measured'] for e in episodes]),'nominal_drift_end_ms_per_episode':dist([e['sampling_timing']['timeline_deviation_ms'] for e in episodes]),'nominal_drift_percent_per_episode':dist([e['sampling_timing']['timeline_deviation_ms']/1000/e['sampling_timing']['dataset_span_s']*100 for e in episodes]),'state_after_camera_count':sum(r['camera_to_state_ms']>0 for r in allrows),'action_before_state_count':sum(r['sent_action_monotonic']<r['state_observation_monotonic'] for r in allrows)},'episode22':ep22,'execution':{'run':str(RUN),'reference_model_start_monotonic':start,'summary':rsummary,'controls':controls,'predictions':preds,'events':events,'statistics':{'controls_total':len(controls),'control_mode_counts':modecounts,'model_controls':len(modelcontrols),'model_control_interval_ms':dist(intervals),'model_control_hz_from_log_events':(len(modelcontrols)-1)/(modelcontrols[-1]['monotonic']-modelcontrols[0]['monotonic']),'inference_compute_ms':dist([p['compute_duration_ms'] for p in preds]),'input_age_at_arrival_ms':dist([p['input_age_at_arrival_ms'] for p in preds]),'predictions':len(preds),'accepted_prediction_count':sum(bool(p.get('accepted')) for p in preds),'queue_installs':sum(e.get('event')=='queue_install' for e in events),'common_speed_scale_model':dist([r['common_speed_scale'] for r in modelcontrols]),'limited_model_controls':sum(r['common_speed_scale']<.999999 for r in modelcontrols)}}}
+result['meta']['source_hashes_after']={p:{'sha256':hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest(),'bytes':pathlib.Path(p).stat().st_size} for p in sources};result['meta']['source_hashes_unchanged']=result['meta']['source_hashes_before']==result['meta']['source_hashes_after']
+print(json.dumps({'data':result,'source_codes':sourcecodes},ensure_ascii=False,separators=(',',':')))

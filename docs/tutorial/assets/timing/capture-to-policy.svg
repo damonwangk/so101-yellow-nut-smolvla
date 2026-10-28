@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1250" viewBox="0 0 1440 1250" role="img" aria-labelledby="title desc">
+<title id="title">SO-101 从异步采集到模型执行的三根时间尺</title>
+<desc id="desc">原创结构图。30 FPS 相机和目标60 Hz主从控制异步运行，以相机主机接收时刻选择最近已完成状态读取的控制样本，保存名义30Hz训练行和真实时间旁路日志。训练从当前行起读取50个动作；部署异步预测50乘6目标，按30Hz策略时间轴插值并经限幅后以目标60Hz发送。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#285c4a"/></marker><style>
+text{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;fill:#242923}.title{font-size:32px;font-weight:650}.sub{font-size:17px;fill:#687064}.section{font-size:20px;font-weight:650;fill:#285c4a}.head{font-size:20px;font-weight:650}.body{font-size:17px}.small{font-size:15px;fill:#687064}.mono{font-family:ui-monospace,Menlo,monospace;font-size:17px}.box{fill:#fafaf3;stroke:#9fb295;stroke-width:1.5}.arrow{fill:none;stroke:#285c4a;stroke-width:2;marker-end:url(#arrow)}.dash{stroke-dasharray:6 5}.rule{stroke:#cbd4c0;stroke-width:1}.tag{font-size:14px;fill:#285c4a}.band{fill:#eef1e7;stroke:#cbd4c0}
+</style></defs>
+<rect width="1440" height="1250" fill="#f7f5ee"/>
+<text x="42" y="55" class="title">频率不同，如何组成一个可学习、可执行的闭环？</text>
+<text x="42" y="87" class="sub">本项目真实软件结构的原创重绘 · 这是关系图，箭头长度不代表实测耗时</text>
+
+<rect x="25" y="115" width="1390" height="355" rx="6" class="band"/>
+<text x="45" y="149" class="section">① 采集：两个异步入口，按同一主机时钟做近似匹配</text>
+<rect x="45" y="175" width="325" height="112" rx="4" class="box"/>
+<text x="63" y="205" class="head">腕部相机 · 标称 30 FPS</text>
+<text x="63" y="235" class="body">新 RGB → 主机接收时刻 cᵢ</text>
+<text x="63" y="262" class="small">曝光起止未记录；cᵢ 不是曝光时刻</text>
+<rect x="45" y="316" width="325" height="128" rx="4" class="box"/>
+<text x="63" y="346" class="head">主从跟随 · 目标 60 Hz</text>
+<text x="63" y="376" class="body">读从臂状态 qₙ → 映射 / 限幅</text>
+<text x="63" y="403" class="body">→ 发送六维位置目标 aₙ</text>
+<text x="63" y="429" class="small">电机内部伺服频率另属硬件层，未测定</text>
+
+<rect x="555" y="205" width="410" height="213" rx="4" class="box"/>
+<text x="576" y="239" class="head">选一个已完成的控制样本</text>
+<text x="576" y="276" class="mono">max n : state_doneₙ ≤ cᵢ</text>
+<text x="576" y="310" class="body">配对：imageᵢ + qₙ + aₙ</text>
+<text x="576" y="344" class="small">aₙ 与 qₙ 来自同次软件迭代</text>
+<text x="576" y="372" class="small">命令发送完成可早于或晚于 cᵢ</text>
+<text x="576" y="398" class="small">不是插值对齐，不是硬件触发同步</text>
+<path d="M370 230 H455 V258 H555" class="arrow"/>
+<path d="M370 380 H455 V349 H555" class="arrow"/>
+<text x="390" y="211" class="tag">唯一新帧</text><text x="390" y="415" class="tag">保留最近控制样本</text>
+<path d="M965 308 H1040" class="arrow"/>
+<rect x="1040" y="205" width="350" height="213" rx="4" class="box"/>
+<text x="1060" y="239" class="head">一行 + 图像 + 旁路时间</text>
+<text x="1060" y="275" class="body">Parquet：state / action</text>
+<text x="1060" y="305" class="body">MP4：这一张新图</text>
+<text x="1060" y="335" class="mono">timestamp = frame / 30</text>
+<text x="1060" y="369" class="small">alignment.jsonl 保存真实主机时间</text>
+<text x="1060" y="397" class="small">未保存全部 60 Hz 中间目标</text>
+
+<path d="M1215 418 V498 H205 V543" class="arrow"/>
+<rect x="555" y="482" width="405" height="29" fill="#f7f5ee"/><text x="570" y="503" class="tag">训练读取标准时间轴；旁路 JSONL 用于审计，不自动输入模型</text>
+<text x="45" y="541" class="section">② 训练：以保存行作时间网格，不会自动修复原始采集时延</text>
+<rect x="45" y="565" width="320" height="150" rx="4" class="box"/>
+<text x="63" y="597" class="head">Dataset → batch</text><text x="63" y="629" class="body">当前图 + 当前 state + 指令</text>
+<text x="63" y="658" class="body">当前起 50 行 action 监督</text><text x="63" y="689" class="small">名义跨度 49 / 30 ≈ 1.633 秒</text>
+<path d="M365 640 H410" class="arrow"/>
+<rect x="410" y="565" width="285" height="150" rx="4" class="box"/>
+<text x="429" y="597" class="head">预处理</text><text x="429" y="629" class="body">像素 / 分词 / 标准化</text>
+<text x="429" y="658" class="body">补维度，保留时间 mask</text><text x="429" y="689" class="small">不读取逐帧真实 Δt 作条件</text>
+<path d="M695 640 H740" class="arrow"/>
+<rect x="740" y="565" width="310" height="150" rx="4" class="box"/>
+<text x="759" y="597" class="head">SmolVLA + Flow Matching</text><text x="759" y="629" class="body">观测特征 → 预测动作速度场</text>
+<text x="759" y="658" class="body">有效 50 × 6 标签 → loss</text><text x="759" y="689" class="small">学习参数 θ；不能从 loss 证明同步正确</text>
+<path d="M1050 640 H1095" class="arrow"/>
+<rect x="1095" y="565" width="295" height="150" rx="4" class="box"/>
+<text x="1114" y="597" class="head">保存完整模型包</text><text x="1114" y="629" class="body">权重 + 配置 + 处理器</text>
+<text x="1114" y="658" class="body">固定 30 Hz 动作时间含义</text><text x="1114" y="689" class="small">“50步”不是电机发送50次</text>
+
+<path d="M1240 715 V771 H553 V825" class="arrow dash"/>
+<rect x="780" y="756" width="260" height="29" fill="#f7f5ee"/><text x="795" y="777" class="tag">部署加载参数与处理器</text>
+<text x="45" y="809" class="section">③ 真机：GPU子进程异步预测，父进程循环发送目标</text>
+<rect x="45" y="835" width="320" height="163" rx="4" class="box"/>
+<text x="63" y="868" class="head">新观测</text><text x="63" y="900" class="body">相机约 30 FPS + 从臂反馈</text>
+<text x="63" y="929" class="body">请求携带输入锚点时间</text><text x="63" y="965" class="small">观察 → 计算 → 使用，存在观测龄</text>
+<path d="M365 914 H410" class="arrow"/>
+<rect x="410" y="835" width="285" height="163" rx="4" class="box"/>
+<text x="429" y="868" class="head">异步模型 worker</text><text x="429" y="900" class="body">一次输出 50 × 6 目标</text>
+<text x="429" y="929" class="body">推理速度不是固定 30 Hz</text><text x="429" y="965" class="small">耗时与结果到达龄分开记录</text>
+<path d="M695 914 H740" class="arrow"/>
+<rect x="740" y="835" width="310" height="163" rx="4" class="box"/>
+<text x="759" y="868" class="head">承诺队列 · 策略轴 30 Hz</text><text x="759" y="900" class="body">连续相位 p → 轨迹插值</text>
+<text x="759" y="929" class="body">限速后只推进已接受比例</text><text x="759" y="965" class="small">身体和夹爪沿同一已接受相位</text>
+<path d="M1050 914 H1095" class="arrow"/>
+<rect x="1095" y="835" width="295" height="163" rx="4" class="box"/>
+<text x="1114" y="868" class="head">发送回路 · 目标 60 Hz</text><text x="1114" y="900" class="body">工作边界 / 单步限幅</text>
+<text x="1114" y="929" class="body">发送关节位置目标</text><text x="1114" y="965" class="small">发送完成 ≠ 已经到位 ≠ 抓取成功</text>
+
+<path d="M1240 998 V1060 H205 V998" class="arrow"/>
+<rect x="495" y="1044" width="565" height="31" fill="#f7f5ee"/><text x="510" y="1066" class="body">电机与环境改变 → 下一轮图像和反馈 → 再决策</text>
+<line x1="45" y1="1115" x2="1390" y2="1115" class="rule"/>
+<text x="45" y="1152" class="head">要记住的边界</text>
+<text x="45" y="1186" class="body">60 Hz 是电脑目标更新频率；30 FPS 是图像名义频率；30 Hz 是训练与策略时间网格。三者不要求同时起步。</text>
+<text x="45" y="1218" class="small">真正要控制的是各自时间戳含义、观测龄、匹配误差、时序抖动与执行相位；当前模型没有显式的真实 Δt 条件，也不保证补偿这些误差。</text>
+</svg>

@@ -1,0 +1,90 @@
+{
+  "compiled_on": "2026-10-22",
+  "canonical_record": "/Users/x-1w/Downloads/so-101/机械臂项目记录.md",
+  "inputs": {
+    "机械臂项目记录.md": "0c192d247c6596c0a22def7320cdc9c850dbe61ec81c0e812b1819607f204d24",
+    "数据验收报告.md": "8dc2c08db23ead1952f12e63f8b5e92ad466fe96717681e5819a1a461a1dfcdd",
+    "黄色螺母训练流程.md": "40cae7042412a7b8f79802558b9fc62f5456b0d285dee85e024c0410214b50e0",
+    "第5000步模型离线检查.md": "1683afb596e5fdcfaa5d451e1f358a7c5774105853a40759875627d522063c43",
+    "黄色螺母模型实机测试说明.md": "4c5d25421e6913074cc8e9638b7756b465fe96750717ca752288c052ef236d33"
+  },
+  "official_tag": "v0.6.1",
+  "core_source_matches": {
+    "modeling_smolvla.py": {
+      "sha256": "37b1d56f37510732a087cf5c32c05cd15d6234201a3f002f108ec4c53438cc7d",
+      "windows_installed_equals_official_tag": true
+    },
+    "smolvlm_with_expert.py": {
+      "sha256": "996d3b0c713c0ed42b383aa2cf89b2e6f9868e337747c480a64adaecdc1073cf",
+      "windows_installed_equals_official_tag": true
+    }
+  },
+  "metrics_source": "D:/so-101/logs/yellow_nut_smolvla_20261019T110537/metrics.jsonl",
+  "sample_source": "D:/so-101/datasets/yellow_nut_to_brown_tray/formal/lerobot/data/chunk-000/file-022.parquet",
+  "project_code_source": "github.com/damonwangk/so101-yellow-nut-smolvla (portable release snapshot)",
+  "media": {
+    "initial-setup.jpg": "d160359b653e5eb1374e5a6d3891d7a06849db84d01362fdde8e3a5856d69d56",
+    "success-demo.mp4": "636afe9594a6c0f28f38bcfecef26e39a3be03bd9acf6c91658bdc5f4db5635b"
+  },
+  "tutorial_source": {
+    "file": "SmolVLA从0到1实施教程.md",
+    "sha256": "568e46894dd3153f8a07290d9e1bd014de492ac309ce49cb1308db1b4ea66cac"
+  },
+  "revision": {
+    "chapters": 21,
+    "learning_goals": 21,
+    "chapter_self_checks": 21,
+    "qc_quiz_cases": 8,
+    "code_reading_pages": 31,
+    "official_figures": "4 original SVG redraws; assets/official/来源与许可.md",
+    "real_batch": "assets/batch-real.json",
+    "real_batch_sha256": "81f861120c6ce3572c8675ee9d6917a554e8e8052b9d29909cdcc47d345ea8d8",
+    "real_batch_scope": "8 deterministic anchors from episode22 read via installed official Dataset/DataLoader and CPU checkpoint processor. Not an archived random training batch. No policy forward or hardware."
+  },
+  "primary_teaching_sources": [
+    {
+      "title": "SmolVLA official blog",
+      "url": "https://huggingface.co/blog/smolvla"
+    },
+    {
+      "title": "SmolVLA paper",
+      "url": "https://arxiv.org/html/2506.01844v1"
+    },
+    {
+      "title": "LeRobot SmolVLA version documentation",
+      "url": "https://huggingface.co/docs/lerobot/v0.6.1/en/smolvla"
+    },
+    {
+      "title": "LeRobot v3 dataset",
+      "url": "https://huggingface.co/docs/lerobot/lerobot-dataset-v3"
+    },
+    {
+      "title": "LeRobot source v0.6.1",
+      "url": "https://github.com/huggingface/lerobot/tree/v0.6.1/src/lerobot/policies/smolvla"
+    },
+    {
+      "title": "Wilson interval reference",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm"
+    },
+    {
+      "title": "Python3.11 perf_counter clock semantics",
+      "url": "https://docs.python.org/3.11/library/time.html#time.perf_counter"
+    }
+  ],
+  "timing_revision": {
+    "date": "2026-10-22",
+    "source_json": "assets/timing-real.json",
+    "sha256": "7342a171e2e7719eaeb4b8e744beaecb85df6fd673b0d7409612beb675f132e2",
+    "source_files_before_after_hash_equal": 105,
+    "source_hash_report": "验证/时间证据源哈希.json",
+    "scope": "read-only existing files; no devices, model loading, control, collection, training or inference",
+    "new_original_svg": "assets/timing/capture-to-policy.svg",
+    "interactive_panels": [
+      "timing-alignment",
+      "timing-drift",
+      "timing-deploy"
+    ],
+    "no_sensor_delay_compensation_added": true,
+    "control_training_capture_code_modified": false
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "created": "2026-10-21",
+  "license": "Apache-2.0 for original SVGs",
+  "source_notes": "来源与许可.md",
+  "assets": [
+    {
+      "file": "attention-numeric-example.svg",
+      "bytes": 3436,
+      "sha256": "60a5ab6101e118fa3a8e623b6ae0baa3a1a7f9c347298ed8547a766ce4b69ce0",
+      "type": "original teaching diagram; not model activation"
+    },
+    {
+      "file": "flow-matching-scalar-example.svg",
+      "bytes": 3897,
+      "sha256": "545ec9fcb0cceffc7732da829866fb281724186e5af44d464786f40746978a41",
+      "type": "original teaching diagram; not model activation"
+    },
+    {
+      "file": "smolvla-architecture-teaching.svg",
+      "bytes": 8265,
+      "sha256": "4f7c4962ecc747cb139de5e1189951385e09887095ef5906492abd3f36a5cd5a",
+      "type": "original teaching diagram; not model activation"
+    },
+    {
+      "file": "visual-token-compression.svg",
+      "bytes": 30017,
+      "sha256": "e622537d8666b5d1e1f8fe947e553e4457803a17cc23e0981092aa539fe3d9c4",
+      "type": "original teaching diagram; not model activation"
+    }
+  ]
+}

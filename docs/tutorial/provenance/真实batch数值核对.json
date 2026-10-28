@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-21",
+  "samples": 8,
+  "anchors": [
+    0,
+    30,
+    60,
+    120,
+    180,
+    245,
+    440,
+    480
+  ],
+  "action_shape": [
+    8,
+    50,
+    6
+  ],
+  "valid_supervised_scalars": 2160,
+  "last_anchor_valid_steps": 10,
+  "normalization_max_abs_roundoff": 1.6581723949471439e-07,
+  "text_valid_tokens": 14,
+  "text_padding_tokens": 34,
+  "original_dataset_files": 153,
+  "source_hashes_unchanged": true,
+  "policy_weights_loaded": false,
+  "model_forward_started": false,
+  "hardware_objects_created": 0
+}

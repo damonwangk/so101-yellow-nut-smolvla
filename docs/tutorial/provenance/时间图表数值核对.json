@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-22",
+  "formal_episodes": 50,
+  "saved_frames": 29570,
+  "episode22_frames": 490,
+  "timestamp_formula_max_abs_error_ms": 0,
+  "batch_values_f32_equal": 2448,
+  "source_files_before_after_unchanged": 105,
+  "source_hashes_unchanged": true,
+  "frame12_send_after_camera_ms": 5.5763000273145735,
+  "frame245_state_minus_camera_ms": -3.987800038885325,
+  "frame245_send_minus_camera_ms": -2.531500009354204,
+  "episode22_last_drift_ms": -124.02890000958067,
+  "execution_control_events": 3589,
+  "model_control_events": 2611,
+  "model_event_hz": 58.01451987405871,
+  "predictions": 151,
+  "first_prediction_envelope_ms": 369.4905000156723,
+  "first_prediction_compute_ms": 342.6028999965638,
+  "first_prediction_control_events": 21,
+  "model_forward_started": false,
+  "hardware_started": false
+}

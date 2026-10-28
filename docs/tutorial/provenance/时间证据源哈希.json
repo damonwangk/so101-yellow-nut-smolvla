@@ -1,0 +1,914 @@
+{
+  "date": "2026-10-22",
+  "scope": "read-only existing files; no devices, model loading, control, collection, training or inference",
+  "source_files": 105,
+  "source_hashes_unchanged": true,
+  "hashes_before": {
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000000\\alignment.jsonl": {
+      "sha256": "598a691d2e71c203c706772bcdf984dfde528cf0c901825aa93ac75b75fabcfe",
+      "bytes": 1895684
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000000\\recording_summary.json": {
+      "sha256": "894c4aa1e2ea60b4e99ddfbe7356c00cb7dd7a6484fb57b83160ba0e42e84aca",
+      "bytes": 3756
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000001\\alignment.jsonl": {
+      "sha256": "35a1876b02cb1cedf77f5826772b07bc2507b1dae9e3ab9e30bda65b3c0f4dd6",
+      "bytes": 1746337
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000001\\recording_summary.json": {
+      "sha256": "7d74b58d10d60ea6296a62cd879468b5fd00b14e3cbce2e6f8a00e6663cb9ed3",
+      "bytes": 3437
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000002\\alignment.jsonl": {
+      "sha256": "eea69daec353383098dd7c20c36f6f3223c9b933d5891df43899baa3fa1dfc55",
+      "bytes": 1885777
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000002\\recording_summary.json": {
+      "sha256": "04680026bdc2609942ae17ab38ecfc69622d9b23f6d601a83680d9e064f5c567",
+      "bytes": 3437
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000003\\alignment.jsonl": {
+      "sha256": "2a0fc37cd29c0a86a29d033fa158e57a7cd4edfead005ed496cd01c6f76d9509",
+      "bytes": 1804386
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000003\\recording_summary.json": {
+      "sha256": "7982cfcb170771f69ca1ad2567156b4a6f8115d2245fb3f2dd4a1c03510b58ae",
+      "bytes": 3423
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000004\\alignment.jsonl": {
+      "sha256": "67f9a448f0c1c28ccba3971463c8e96a829ac1952ae9fc3c6c1edee1e0086a7f",
+      "bytes": 1618585
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000004\\recording_summary.json": {
+      "sha256": "58db52e23dfb670f3a28973f1ed764cfcff6f3e5e4d00607797fd1610409605f",
+      "bytes": 3423
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000005\\alignment.jsonl": {
+      "sha256": "1490273df1200c959282f61d80d91dab35744622825d3e39fdeacd20261eb235",
+      "bytes": 1238131
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000005\\recording_summary.json": {
+      "sha256": "3d5783ea303d2d84a155d6dd0fbe8f3f262308f9d1e19f9eb82a165bdf6e6a87",
+      "bytes": 3437
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000006\\alignment.jsonl": {
+      "sha256": "15bf9a9a69955284c5e1079935e8d614bead6a64fac5aad7697a27a53b2ec97c",
+      "bytes": 1486499
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000006\\recording_summary.json": {
+      "sha256": "6689a99ac03c330dec37a2b1a44d7ba2b56651a904a1775c6a7a7c478eacef49",
+      "bytes": 3424
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000007\\alignment.jsonl": {
+      "sha256": "4dedf6f053c082889c3d4bf675d650b20c8fd4945eb98c01962b49ead91cb47e",
+      "bytes": 1527810
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000007\\recording_summary.json": {
+      "sha256": "eb0db16342e151fb6689fa82c75d77389a1606e8926716008a97f331b83f28fd",
+      "bytes": 3438
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000008\\alignment.jsonl": {
+      "sha256": "5c2be50f57c2d3c3a6ce76cceaba60874f9bf258978a95fe88c9f95605e277f9",
+      "bytes": 1378043
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000008\\recording_summary.json": {
+      "sha256": "fab9cc435a3ccfac3e1cecff56e863fd2de516748985cc437a47c74ea59c812d",
+      "bytes": 3436
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000009\\alignment.jsonl": {
+      "sha256": "68cd6d23dd661d43983cdfa051d51285c98e40d35546069527601538c8421fc1",
+      "bytes": 1665716
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000009\\recording_summary.json": {
+      "sha256": "6e99d2c5e37748233acb1f71d545fc46a7eb1b2791ef4ed44045ad8ff63135d8",
+      "bytes": 3425
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000010\\alignment.jsonl": {
+      "sha256": "91a5d3459c1b3fdc76261cf924a2d580d9a85c85201dd19bc12d9b1463a24d21",
+      "bytes": 1752217
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000010\\recording_summary.json": {
+      "sha256": "1a31a3db3fb59b2803eec941c6029d7b5a339cb935a36dd5d5946a3e7db6684d",
+      "bytes": 3438
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000011\\alignment.jsonl": {
+      "sha256": "413c2f5eed5acdc783678d193e430dffadf63ef1cbccba8ebc29f47ae560f362",
+      "bytes": 1422787
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000011\\recording_summary.json": {
+      "sha256": "0346511dda28e17d6327703757dccb09b53d5712e66ff98d6dc0f34021ba41ec",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000012\\alignment.jsonl": {
+      "sha256": "a2601ccf4ccf684a54205e49a3ffaac8cee672caf7a77d03e4dbb72f83a9c206",
+      "bytes": 1657980
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000012\\recording_summary.json": {
+      "sha256": "4eb51e631568ab5d1d751bda08f73331851724390d2c386a653ea3f7afed21cd",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000013\\alignment.jsonl": {
+      "sha256": "2e3036a59638d109127a3392e2732a0fdc969fc801c9ed02c01638ff1837ab11",
+      "bytes": 1409212
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000013\\recording_summary.json": {
+      "sha256": "3233cb66165405ed6b42a8931af40f738efd557de9a7f2a0e67c7524ffcf002a",
+      "bytes": 3428
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000014\\alignment.jsonl": {
+      "sha256": "75e6413e4613800c12b5ed072d00fc74a3833d7379ab0ceac38e430f10fd12b8",
+      "bytes": 1176179
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000014\\recording_summary.json": {
+      "sha256": "3423ac1c2512e5b99f13cff42969626e76abb561742274cf64f960e2a27ff3cd",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000015\\alignment.jsonl": {
+      "sha256": "6e79fac86f9aee0c066bd36b01fe795ae9ab71a62d7aab49582cd8243810917a",
+      "bytes": 1441042
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000015\\recording_summary.json": {
+      "sha256": "e9977e93ab810d0bb4940adf9b74ede71b791a96e6eb066f779d6efcaaacaa14",
+      "bytes": 3426
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000016\\alignment.jsonl": {
+      "sha256": "6f1b533dbba1beccb43470d7dab909bcf0f53a5525a71801b51f67ead78d71d4",
+      "bytes": 1350102
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000016\\recording_summary.json": {
+      "sha256": "5c28cecd171e4df044417cc33e9c67941743dafc2765b943e580ab47c579f58a",
+      "bytes": 3441
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000017\\alignment.jsonl": {
+      "sha256": "6b0e128085839a579d974c1fdd1b2a965776ef37df0ce553db70caf09119fa08",
+      "bytes": 1401034
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000017\\recording_summary.json": {
+      "sha256": "86a48cf7f83de3e320dc02a2c7fc6ec26629a40789f8e316829aa02e95efa0e1",
+      "bytes": 3423
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000018\\alignment.jsonl": {
+      "sha256": "0bcdd9deeb39e5b3436610c582b2b3ca918bc8bf91e17addb378afadb3da193c",
+      "bytes": 1411110
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000018\\recording_summary.json": {
+      "sha256": "a1abee3948cba45d2725d6abb0387bc8a7ace304ea2ac7a4c3e30b50c88a83a4",
+      "bytes": 3441
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000019\\alignment.jsonl": {
+      "sha256": "ce9275f5ffd3a7ac87c67f1671b8dce5fb9ca86b710a06777358bc4be4357d94",
+      "bytes": 1434010
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000019\\recording_summary.json": {
+      "sha256": "dc878c895d2cf41ec9fb5627d64877a11c7869768cf96c38d73f8f9d2ebcb2de",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000020\\alignment.jsonl": {
+      "sha256": "d14174ca1b71d2bf20315148596628bc7ef9855384fa32e5ef24df7d75cb87e3",
+      "bytes": 1042381
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000020\\recording_summary.json": {
+      "sha256": "3c0d562ba3d3d7dc4e7cb08c3e6d303802ac27d4d91001e31dcb86fdedfeb0ad",
+      "bytes": 3437
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000021\\alignment.jsonl": {
+      "sha256": "7049be28392596b33e11eeaed2b1d2a1d30c03f5a9afdbb4df359f065bb03a1b",
+      "bytes": 1079418
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000021\\recording_summary.json": {
+      "sha256": "ea910a02578461c99515b18e8a2193a02072cc6837b25068d85e51e79db4255d",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000022\\alignment.jsonl": {
+      "sha256": "33de629daef7fb1039e759ba9898f7f37721be8ec353dab691ec5cfd7d59a787",
+      "bytes": 1066864
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000022\\recording_summary.json": {
+      "sha256": "2cd01809e28b73fc18707893fa7cf46009f3915736ff71553e2f50d7127bf746",
+      "bytes": 3424
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000023\\alignment.jsonl": {
+      "sha256": "2d43b28681b79063ac99da933944762250d42ccf62236600153ea293bac1b955",
+      "bytes": 1178466
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000023\\recording_summary.json": {
+      "sha256": "5c7d3b09ab35aae9eb61e28c3ad2800c70e051d888fb709130ad2d03a8ecea2a",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000024\\alignment.jsonl": {
+      "sha256": "8bed4bd86353f2f2cfd7eb43a76a15e8d74a307fbd554244a38e7b4ec984e92b",
+      "bytes": 1123506
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000024\\recording_summary.json": {
+      "sha256": "c6fcad34edcb42f9231a3a97c1d8b668e20d62dbf8688a1ffaee15ff7bf983e5",
+      "bytes": 3443
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000025\\alignment.jsonl": {
+      "sha256": "50552673859a7b4e12ba732216f4c862ffcd6d024e5c629559f51b3a56a9bce7",
+      "bytes": 986098
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000025\\recording_summary.json": {
+      "sha256": "6dcb05781833c1ce564c1ff39f1f36c46d72138ebfe21e14c2c1d9b5618175d6",
+      "bytes": 3438
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000026\\alignment.jsonl": {
+      "sha256": "942a8f39acc403b85ef78900914b6a9398303b165cafcc01ca427e2b96af13b9",
+      "bytes": 1012372
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000026\\recording_summary.json": {
+      "sha256": "c277e6ccd6172cfa07caf8f8ac47a1085ebf7da034065baaea225d3d36296687",
+      "bytes": 3425
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000027\\alignment.jsonl": {
+      "sha256": "005331a8b67591e62e3438eea75d8540779ac19b37b9bfd129b37984d88868f3",
+      "bytes": 960890
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000027\\recording_summary.json": {
+      "sha256": "88afee202b0aca62f318ee06bd08c7c33bf86681cdc272957bb3a95e8390877e",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000028\\alignment.jsonl": {
+      "sha256": "710987f5e746081bf1551f6e7391ca486231129e534f359880068c628f06b96f",
+      "bytes": 1544075
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000028\\recording_summary.json": {
+      "sha256": "b7efb9ac42a28ee70eea1374e612006109753c6ec29e7a9d4d6ca63f50aa3e0a",
+      "bytes": 3428
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000029\\alignment.jsonl": {
+      "sha256": "a64b30f34b1bbf5ab31dc9a08084cf340df7b75850b34a08acabfdc2ed9a922e",
+      "bytes": 1249925
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000029\\recording_summary.json": {
+      "sha256": "e8ad4d094d463d7b9d04fb755c218c8bd1a12810736a6f2bcf66cd15e7712a8b",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000030\\alignment.jsonl": {
+      "sha256": "ab2e2f73358dd921bdae96f9b2d607f8ec6f08c8295693241f3600cceeefcd22",
+      "bytes": 1341413
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000030\\recording_summary.json": {
+      "sha256": "4d8807fc3d8a6571ad509550a065556e0d64305576bb3472f9707727dd8a2c56",
+      "bytes": 3428
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000031\\alignment.jsonl": {
+      "sha256": "6537c9825734b64af955be4efa989627d1fb1de6483e5a4c277faebcde16df0c",
+      "bytes": 869851
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000031\\recording_summary.json": {
+      "sha256": "2cd2e10f89b5ec0092caf6d18959678539312dc3fe9ba10ba5cdd562fad5ee7f",
+      "bytes": 3426
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000032\\alignment.jsonl": {
+      "sha256": "535e592b45ee1d376ec6bd87ea6303ae9228085b5466776bad39a65ec4d47f99",
+      "bytes": 1291211
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000032\\recording_summary.json": {
+      "sha256": "c55b56ea0805d5680db94860ef25c8480192dd64ee8a79f4ee34114208189cac",
+      "bytes": 3426
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000033\\alignment.jsonl": {
+      "sha256": "7a7a7ae9c66aab831b0a0ff32783f04bc01d3d09af7efc513908146a39b50142",
+      "bytes": 1174348
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000033\\recording_summary.json": {
+      "sha256": "e9ea4a8fa4ad733043d4c94e9639de75fe081a2aec248c9b66bb7402ab480c72",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000034\\alignment.jsonl": {
+      "sha256": "cc0744f06d08eff17f0407f58315b957875962c9fb8082c5ecb73252c2bb92d0",
+      "bytes": 1205797
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000034\\recording_summary.json": {
+      "sha256": "8ca57fe415a6ad711997d21793ffefb07ca05f44df59a1d24175e030aa67ea89",
+      "bytes": 3438
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000035\\alignment.jsonl": {
+      "sha256": "13acd22f2c01c1b20ba7cd82c923ffa5a29b53f55b74eee6fd18b71a27686fd9",
+      "bytes": 1120655
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000035\\recording_summary.json": {
+      "sha256": "cebcbd3115d0d36f75f07a2d24ad450f4bcea7804db04e1afe30d9d230516410",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000036\\alignment.jsonl": {
+      "sha256": "cdff27a29b57f1c5efaa988f7060265be88066751b37368b7a8e5f1db71ba0c2",
+      "bytes": 1067568
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000036\\recording_summary.json": {
+      "sha256": "551f6ea78eb0affd46517ca0a6fd7a747959d72b1f5e6a10af55f93f897c67e5",
+      "bytes": 3423
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000037\\alignment.jsonl": {
+      "sha256": "0cd24985da777853ba3318a4452fe6bab8a42f3db6409cf90ff8b66f8c16ca96",
+      "bytes": 1116501
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000037\\recording_summary.json": {
+      "sha256": "5845823a97a9389e1c467689a4c022822c6899006183f1c7c16d2fc209d57f22",
+      "bytes": 3441
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000038\\alignment.jsonl": {
+      "sha256": "915c28103ef1e09e6cc72d271a98ce8260c4799b9776af0ea33a0105a1971ec6",
+      "bytes": 1079983
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000038\\recording_summary.json": {
+      "sha256": "bc437e23184d78d838e975c37a40b88c206ebd51e4a45183abefad76adedb1cf",
+      "bytes": 3424
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000039\\alignment.jsonl": {
+      "sha256": "0473ae6068b75f3e796ed51543d90bbb4de805b109487f7419afeca58749cc6d",
+      "bytes": 1131004
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000039\\recording_summary.json": {
+      "sha256": "8ad76ce4c8d9cb244163e95549add4d727fdca80c3dc173453bf1c7fb0462c51",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000040\\alignment.jsonl": {
+      "sha256": "75ceac4dc40402d1c23fdc8672f802d4571d280ca0a7d110fa619d2050ebf359",
+      "bytes": 1006190
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000040\\recording_summary.json": {
+      "sha256": "199d0a643c344383df8bb15fd1c7ef68f8b6a1f7776199666d41b501b1e97b81",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000041\\alignment.jsonl": {
+      "sha256": "957fc710d000cd71978477a1c1bcaec76a2c6982660d84b7159012a5bb4c2fcd",
+      "bytes": 1031104
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000041\\recording_summary.json": {
+      "sha256": "2ab218962897df89c60d05e5e16819f57d35958833890416e15364f7abe72e0f",
+      "bytes": 3425
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000042\\alignment.jsonl": {
+      "sha256": "95e608f6bebc4a5576efe94a6c70621af05d902ce6a847c583484c49ebf26cfe",
+      "bytes": 1195396
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000042\\recording_summary.json": {
+      "sha256": "ab813ca81cc8b5c975d9223aa52941bdd43fc2a9fa599d3adb1857d0ba7a6580",
+      "bytes": 3426
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000043\\alignment.jsonl": {
+      "sha256": "a94e073f7905e417d526d166544a7d4ae181310ea4598d9436b03e7e6cbf23d1",
+      "bytes": 1199230
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000043\\recording_summary.json": {
+      "sha256": "fa583d44d01079fe70ebb367e055cce876bd35921c1aee609d01c5c73a95eb61",
+      "bytes": 3442
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000044\\alignment.jsonl": {
+      "sha256": "f2f43126add451ed2fd07b5069d71c9f0ac510d2c7ff126d2892746d9f43147b",
+      "bytes": 1045557
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000044\\recording_summary.json": {
+      "sha256": "bd5abbdff6e0e037b587fd39e8d02b02def8948ffbf16dc571cbd8b8e9d8ecad",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000045\\alignment.jsonl": {
+      "sha256": "8e8f67b5b9ded8b04035a4c4ed12434fe77ec10f06c0964fa1aa5efa40bbf032",
+      "bytes": 1114682
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000045\\recording_summary.json": {
+      "sha256": "f6eea59846b037d4e6980ef86007cea182764077ef2ed161d1a453219c92e808",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000046\\alignment.jsonl": {
+      "sha256": "8294c53bb988aa3715b54cac76d277ace34acd818f9cfc1a5d3f06099674c8a6",
+      "bytes": 1107801
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000046\\recording_summary.json": {
+      "sha256": "9d94ce1148e39c1b4b4225c765e54dd7d822ba31c267d9a90fbc038c52d0e6e0",
+      "bytes": 3441
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000047\\alignment.jsonl": {
+      "sha256": "508930f9c59688560436d2b172ca29680f864bbe7f95667504c10526f7d1f107",
+      "bytes": 1113082
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000047\\recording_summary.json": {
+      "sha256": "ae2bafb83a0dab55cb5752b9ba649512d31b45a0c2de6248d059b1ae64eda724",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000048\\alignment.jsonl": {
+      "sha256": "c34685d017b79a52129778aba2238e66913f02d4a0b50dbba407851c1180ffed",
+      "bytes": 1156753
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000048\\recording_summary.json": {
+      "sha256": "a560587a3e43963e9161e26268981a1d8d2e8d2dbf4f0e982ca7b2c5a947ef92",
+      "bytes": 3427
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000049\\alignment.jsonl": {
+      "sha256": "e43ee594bc6dbd5268b540fa6804bbfed75627d45940385faca00ee9905a5626",
+      "bytes": 995004
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000049\\recording_summary.json": {
+      "sha256": "ef772cc380b0d59c781ad93d3727ce0b7c87959c8dfdb16821531a5d0c7a366e",
+      "bytes": 3439
+    },
+    "D:\\so-101\\evaluations\\yellow_nut_to_brown_tray\\step005000-20261020T094811\\control.jsonl": {
+      "sha256": "1d980e68c08f14c37d5a19168a59c85e5872a34d4ca846d666884df7cbce3255",
+      "bytes": 5296502
+    },
+    "D:\\so-101\\evaluations\\yellow_nut_to_brown_tray\\step005000-20261020T094811\\summary.json": {
+      "sha256": "7b5c85a30905810ce4d1bfb776fd943eab6420c7b364413d8eb7243064452ee8",
+      "bytes": 1960
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\qc\\acceptance_20261019\\technical_summary.json": {
+      "sha256": "ed4d3ecc3123bbb306e8eb62107e1f84636f35e40934207c49b046cc4b13413c",
+      "bytes": 191210
+    },
+    "D:\\so-101\\.venv\\Lib\\site-packages\\lerobot\\scripts\\lerobot_teleoperate.py": {
+      "sha256": "2f2b2a9bb822d1b33b0033e9a2b0664649f959ef7da45d48629368a63ff9cf1a",
+      "bytes": 10377
+    },
+    "D:\\so-101\\.venv\\Lib\\site-packages\\lerobot\\cameras\\opencv\\camera_opencv.py": {
+      "sha256": "5a89d7e04438b441900a11b7ff5a4fb654d5a81504cb9b42464ec012c56d1046",
+      "bytes": 25695
+    }
+  },
+  "hashes_after": {
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000000\\alignment.jsonl": {
+      "sha256": "598a691d2e71c203c706772bcdf984dfde528cf0c901825aa93ac75b75fabcfe",
+      "bytes": 1895684
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000000\\recording_summary.json": {
+      "sha256": "894c4aa1e2ea60b4e99ddfbe7356c00cb7dd7a6484fb57b83160ba0e42e84aca",
+      "bytes": 3756
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000001\\alignment.jsonl": {
+      "sha256": "35a1876b02cb1cedf77f5826772b07bc2507b1dae9e3ab9e30bda65b3c0f4dd6",
+      "bytes": 1746337
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000001\\recording_summary.json": {
+      "sha256": "7d74b58d10d60ea6296a62cd879468b5fd00b14e3cbce2e6f8a00e6663cb9ed3",
+      "bytes": 3437
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000002\\alignment.jsonl": {
+      "sha256": "eea69daec353383098dd7c20c36f6f3223c9b933d5891df43899baa3fa1dfc55",
+      "bytes": 1885777
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000002\\recording_summary.json": {
+      "sha256": "04680026bdc2609942ae17ab38ecfc69622d9b23f6d601a83680d9e064f5c567",
+      "bytes": 3437
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000003\\alignment.jsonl": {
+      "sha256": "2a0fc37cd29c0a86a29d033fa158e57a7cd4edfead005ed496cd01c6f76d9509",
+      "bytes": 1804386
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000003\\recording_summary.json": {
+      "sha256": "7982cfcb170771f69ca1ad2567156b4a6f8115d2245fb3f2dd4a1c03510b58ae",
+      "bytes": 3423
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000004\\alignment.jsonl": {
+      "sha256": "67f9a448f0c1c28ccba3971463c8e96a829ac1952ae9fc3c6c1edee1e0086a7f",
+      "bytes": 1618585
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000004\\recording_summary.json": {
+      "sha256": "58db52e23dfb670f3a28973f1ed764cfcff6f3e5e4d00607797fd1610409605f",
+      "bytes": 3423
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000005\\alignment.jsonl": {
+      "sha256": "1490273df1200c959282f61d80d91dab35744622825d3e39fdeacd20261eb235",
+      "bytes": 1238131
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000005\\recording_summary.json": {
+      "sha256": "3d5783ea303d2d84a155d6dd0fbe8f3f262308f9d1e19f9eb82a165bdf6e6a87",
+      "bytes": 3437
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000006\\alignment.jsonl": {
+      "sha256": "15bf9a9a69955284c5e1079935e8d614bead6a64fac5aad7697a27a53b2ec97c",
+      "bytes": 1486499
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000006\\recording_summary.json": {
+      "sha256": "6689a99ac03c330dec37a2b1a44d7ba2b56651a904a1775c6a7a7c478eacef49",
+      "bytes": 3424
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000007\\alignment.jsonl": {
+      "sha256": "4dedf6f053c082889c3d4bf675d650b20c8fd4945eb98c01962b49ead91cb47e",
+      "bytes": 1527810
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000007\\recording_summary.json": {
+      "sha256": "eb0db16342e151fb6689fa82c75d77389a1606e8926716008a97f331b83f28fd",
+      "bytes": 3438
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000008\\alignment.jsonl": {
+      "sha256": "5c2be50f57c2d3c3a6ce76cceaba60874f9bf258978a95fe88c9f95605e277f9",
+      "bytes": 1378043
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000008\\recording_summary.json": {
+      "sha256": "fab9cc435a3ccfac3e1cecff56e863fd2de516748985cc437a47c74ea59c812d",
+      "bytes": 3436
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000009\\alignment.jsonl": {
+      "sha256": "68cd6d23dd661d43983cdfa051d51285c98e40d35546069527601538c8421fc1",
+      "bytes": 1665716
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000009\\recording_summary.json": {
+      "sha256": "6e99d2c5e37748233acb1f71d545fc46a7eb1b2791ef4ed44045ad8ff63135d8",
+      "bytes": 3425
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000010\\alignment.jsonl": {
+      "sha256": "91a5d3459c1b3fdc76261cf924a2d580d9a85c85201dd19bc12d9b1463a24d21",
+      "bytes": 1752217
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000010\\recording_summary.json": {
+      "sha256": "1a31a3db3fb59b2803eec941c6029d7b5a339cb935a36dd5d5946a3e7db6684d",
+      "bytes": 3438
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000011\\alignment.jsonl": {
+      "sha256": "413c2f5eed5acdc783678d193e430dffadf63ef1cbccba8ebc29f47ae560f362",
+      "bytes": 1422787
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000011\\recording_summary.json": {
+      "sha256": "0346511dda28e17d6327703757dccb09b53d5712e66ff98d6dc0f34021ba41ec",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000012\\alignment.jsonl": {
+      "sha256": "a2601ccf4ccf684a54205e49a3ffaac8cee672caf7a77d03e4dbb72f83a9c206",
+      "bytes": 1657980
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000012\\recording_summary.json": {
+      "sha256": "4eb51e631568ab5d1d751bda08f73331851724390d2c386a653ea3f7afed21cd",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000013\\alignment.jsonl": {
+      "sha256": "2e3036a59638d109127a3392e2732a0fdc969fc801c9ed02c01638ff1837ab11",
+      "bytes": 1409212
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000013\\recording_summary.json": {
+      "sha256": "3233cb66165405ed6b42a8931af40f738efd557de9a7f2a0e67c7524ffcf002a",
+      "bytes": 3428
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000014\\alignment.jsonl": {
+      "sha256": "75e6413e4613800c12b5ed072d00fc74a3833d7379ab0ceac38e430f10fd12b8",
+      "bytes": 1176179
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000014\\recording_summary.json": {
+      "sha256": "3423ac1c2512e5b99f13cff42969626e76abb561742274cf64f960e2a27ff3cd",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000015\\alignment.jsonl": {
+      "sha256": "6e79fac86f9aee0c066bd36b01fe795ae9ab71a62d7aab49582cd8243810917a",
+      "bytes": 1441042
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000015\\recording_summary.json": {
+      "sha256": "e9977e93ab810d0bb4940adf9b74ede71b791a96e6eb066f779d6efcaaacaa14",
+      "bytes": 3426
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000016\\alignment.jsonl": {
+      "sha256": "6f1b533dbba1beccb43470d7dab909bcf0f53a5525a71801b51f67ead78d71d4",
+      "bytes": 1350102
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000016\\recording_summary.json": {
+      "sha256": "5c28cecd171e4df044417cc33e9c67941743dafc2765b943e580ab47c579f58a",
+      "bytes": 3441
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000017\\alignment.jsonl": {
+      "sha256": "6b0e128085839a579d974c1fdd1b2a965776ef37df0ce553db70caf09119fa08",
+      "bytes": 1401034
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000017\\recording_summary.json": {
+      "sha256": "86a48cf7f83de3e320dc02a2c7fc6ec26629a40789f8e316829aa02e95efa0e1",
+      "bytes": 3423
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000018\\alignment.jsonl": {
+      "sha256": "0bcdd9deeb39e5b3436610c582b2b3ca918bc8bf91e17addb378afadb3da193c",
+      "bytes": 1411110
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000018\\recording_summary.json": {
+      "sha256": "a1abee3948cba45d2725d6abb0387bc8a7ace304ea2ac7a4c3e30b50c88a83a4",
+      "bytes": 3441
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000019\\alignment.jsonl": {
+      "sha256": "ce9275f5ffd3a7ac87c67f1671b8dce5fb9ca86b710a06777358bc4be4357d94",
+      "bytes": 1434010
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000019\\recording_summary.json": {
+      "sha256": "dc878c895d2cf41ec9fb5627d64877a11c7869768cf96c38d73f8f9d2ebcb2de",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000020\\alignment.jsonl": {
+      "sha256": "d14174ca1b71d2bf20315148596628bc7ef9855384fa32e5ef24df7d75cb87e3",
+      "bytes": 1042381
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000020\\recording_summary.json": {
+      "sha256": "3c0d562ba3d3d7dc4e7cb08c3e6d303802ac27d4d91001e31dcb86fdedfeb0ad",
+      "bytes": 3437
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000021\\alignment.jsonl": {
+      "sha256": "7049be28392596b33e11eeaed2b1d2a1d30c03f5a9afdbb4df359f065bb03a1b",
+      "bytes": 1079418
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000021\\recording_summary.json": {
+      "sha256": "ea910a02578461c99515b18e8a2193a02072cc6837b25068d85e51e79db4255d",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000022\\alignment.jsonl": {
+      "sha256": "33de629daef7fb1039e759ba9898f7f37721be8ec353dab691ec5cfd7d59a787",
+      "bytes": 1066864
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000022\\recording_summary.json": {
+      "sha256": "2cd01809e28b73fc18707893fa7cf46009f3915736ff71553e2f50d7127bf746",
+      "bytes": 3424
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000023\\alignment.jsonl": {
+      "sha256": "2d43b28681b79063ac99da933944762250d42ccf62236600153ea293bac1b955",
+      "bytes": 1178466
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000023\\recording_summary.json": {
+      "sha256": "5c7d3b09ab35aae9eb61e28c3ad2800c70e051d888fb709130ad2d03a8ecea2a",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000024\\alignment.jsonl": {
+      "sha256": "8bed4bd86353f2f2cfd7eb43a76a15e8d74a307fbd554244a38e7b4ec984e92b",
+      "bytes": 1123506
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000024\\recording_summary.json": {
+      "sha256": "c6fcad34edcb42f9231a3a97c1d8b668e20d62dbf8688a1ffaee15ff7bf983e5",
+      "bytes": 3443
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000025\\alignment.jsonl": {
+      "sha256": "50552673859a7b4e12ba732216f4c862ffcd6d024e5c629559f51b3a56a9bce7",
+      "bytes": 986098
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000025\\recording_summary.json": {
+      "sha256": "6dcb05781833c1ce564c1ff39f1f36c46d72138ebfe21e14c2c1d9b5618175d6",
+      "bytes": 3438
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000026\\alignment.jsonl": {
+      "sha256": "942a8f39acc403b85ef78900914b6a9398303b165cafcc01ca427e2b96af13b9",
+      "bytes": 1012372
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000026\\recording_summary.json": {
+      "sha256": "c277e6ccd6172cfa07caf8f8ac47a1085ebf7da034065baaea225d3d36296687",
+      "bytes": 3425
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000027\\alignment.jsonl": {
+      "sha256": "005331a8b67591e62e3438eea75d8540779ac19b37b9bfd129b37984d88868f3",
+      "bytes": 960890
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000027\\recording_summary.json": {
+      "sha256": "88afee202b0aca62f318ee06bd08c7c33bf86681cdc272957bb3a95e8390877e",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000028\\alignment.jsonl": {
+      "sha256": "710987f5e746081bf1551f6e7391ca486231129e534f359880068c628f06b96f",
+      "bytes": 1544075
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000028\\recording_summary.json": {
+      "sha256": "b7efb9ac42a28ee70eea1374e612006109753c6ec29e7a9d4d6ca63f50aa3e0a",
+      "bytes": 3428
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000029\\alignment.jsonl": {
+      "sha256": "a64b30f34b1bbf5ab31dc9a08084cf340df7b75850b34a08acabfdc2ed9a922e",
+      "bytes": 1249925
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000029\\recording_summary.json": {
+      "sha256": "e8ad4d094d463d7b9d04fb755c218c8bd1a12810736a6f2bcf66cd15e7712a8b",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000030\\alignment.jsonl": {
+      "sha256": "ab2e2f73358dd921bdae96f9b2d607f8ec6f08c8295693241f3600cceeefcd22",
+      "bytes": 1341413
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000030\\recording_summary.json": {
+      "sha256": "4d8807fc3d8a6571ad509550a065556e0d64305576bb3472f9707727dd8a2c56",
+      "bytes": 3428
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000031\\alignment.jsonl": {
+      "sha256": "6537c9825734b64af955be4efa989627d1fb1de6483e5a4c277faebcde16df0c",
+      "bytes": 869851
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000031\\recording_summary.json": {
+      "sha256": "2cd2e10f89b5ec0092caf6d18959678539312dc3fe9ba10ba5cdd562fad5ee7f",
+      "bytes": 3426
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000032\\alignment.jsonl": {
+      "sha256": "535e592b45ee1d376ec6bd87ea6303ae9228085b5466776bad39a65ec4d47f99",
+      "bytes": 1291211
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000032\\recording_summary.json": {
+      "sha256": "c55b56ea0805d5680db94860ef25c8480192dd64ee8a79f4ee34114208189cac",
+      "bytes": 3426
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000033\\alignment.jsonl": {
+      "sha256": "7a7a7ae9c66aab831b0a0ff32783f04bc01d3d09af7efc513908146a39b50142",
+      "bytes": 1174348
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000033\\recording_summary.json": {
+      "sha256": "e9ea4a8fa4ad733043d4c94e9639de75fe081a2aec248c9b66bb7402ab480c72",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000034\\alignment.jsonl": {
+      "sha256": "cc0744f06d08eff17f0407f58315b957875962c9fb8082c5ecb73252c2bb92d0",
+      "bytes": 1205797
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000034\\recording_summary.json": {
+      "sha256": "8ca57fe415a6ad711997d21793ffefb07ca05f44df59a1d24175e030aa67ea89",
+      "bytes": 3438
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000035\\alignment.jsonl": {
+      "sha256": "13acd22f2c01c1b20ba7cd82c923ffa5a29b53f55b74eee6fd18b71a27686fd9",
+      "bytes": 1120655
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000035\\recording_summary.json": {
+      "sha256": "cebcbd3115d0d36f75f07a2d24ad450f4bcea7804db04e1afe30d9d230516410",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000036\\alignment.jsonl": {
+      "sha256": "cdff27a29b57f1c5efaa988f7060265be88066751b37368b7a8e5f1db71ba0c2",
+      "bytes": 1067568
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000036\\recording_summary.json": {
+      "sha256": "551f6ea78eb0affd46517ca0a6fd7a747959d72b1f5e6a10af55f93f897c67e5",
+      "bytes": 3423
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000037\\alignment.jsonl": {
+      "sha256": "0cd24985da777853ba3318a4452fe6bab8a42f3db6409cf90ff8b66f8c16ca96",
+      "bytes": 1116501
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000037\\recording_summary.json": {
+      "sha256": "5845823a97a9389e1c467689a4c022822c6899006183f1c7c16d2fc209d57f22",
+      "bytes": 3441
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000038\\alignment.jsonl": {
+      "sha256": "915c28103ef1e09e6cc72d271a98ce8260c4799b9776af0ea33a0105a1971ec6",
+      "bytes": 1079983
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000038\\recording_summary.json": {
+      "sha256": "bc437e23184d78d838e975c37a40b88c206ebd51e4a45183abefad76adedb1cf",
+      "bytes": 3424
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000039\\alignment.jsonl": {
+      "sha256": "0473ae6068b75f3e796ed51543d90bbb4de805b109487f7419afeca58749cc6d",
+      "bytes": 1131004
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000039\\recording_summary.json": {
+      "sha256": "8ad76ce4c8d9cb244163e95549add4d727fdca80c3dc173453bf1c7fb0462c51",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000040\\alignment.jsonl": {
+      "sha256": "75ceac4dc40402d1c23fdc8672f802d4571d280ca0a7d110fa619d2050ebf359",
+      "bytes": 1006190
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000040\\recording_summary.json": {
+      "sha256": "199d0a643c344383df8bb15fd1c7ef68f8b6a1f7776199666d41b501b1e97b81",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000041\\alignment.jsonl": {
+      "sha256": "957fc710d000cd71978477a1c1bcaec76a2c6982660d84b7159012a5bb4c2fcd",
+      "bytes": 1031104
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000041\\recording_summary.json": {
+      "sha256": "2ab218962897df89c60d05e5e16819f57d35958833890416e15364f7abe72e0f",
+      "bytes": 3425
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000042\\alignment.jsonl": {
+      "sha256": "95e608f6bebc4a5576efe94a6c70621af05d902ce6a847c583484c49ebf26cfe",
+      "bytes": 1195396
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000042\\recording_summary.json": {
+      "sha256": "ab813ca81cc8b5c975d9223aa52941bdd43fc2a9fa599d3adb1857d0ba7a6580",
+      "bytes": 3426
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000043\\alignment.jsonl": {
+      "sha256": "a94e073f7905e417d526d166544a7d4ae181310ea4598d9436b03e7e6cbf23d1",
+      "bytes": 1199230
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000043\\recording_summary.json": {
+      "sha256": "fa583d44d01079fe70ebb367e055cce876bd35921c1aee609d01c5c73a95eb61",
+      "bytes": 3442
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000044\\alignment.jsonl": {
+      "sha256": "f2f43126add451ed2fd07b5069d71c9f0ac510d2c7ff126d2892746d9f43147b",
+      "bytes": 1045557
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000044\\recording_summary.json": {
+      "sha256": "bd5abbdff6e0e037b587fd39e8d02b02def8948ffbf16dc571cbd8b8e9d8ecad",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000045\\alignment.jsonl": {
+      "sha256": "8e8f67b5b9ded8b04035a4c4ed12434fe77ec10f06c0964fa1aa5efa40bbf032",
+      "bytes": 1114682
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000045\\recording_summary.json": {
+      "sha256": "f6eea59846b037d4e6980ef86007cea182764077ef2ed161d1a453219c92e808",
+      "bytes": 3440
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000046\\alignment.jsonl": {
+      "sha256": "8294c53bb988aa3715b54cac76d277ace34acd818f9cfc1a5d3f06099674c8a6",
+      "bytes": 1107801
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000046\\recording_summary.json": {
+      "sha256": "9d94ce1148e39c1b4b4225c765e54dd7d822ba31c267d9a90fbc038c52d0e6e0",
+      "bytes": 3441
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000047\\alignment.jsonl": {
+      "sha256": "508930f9c59688560436d2b172ca29680f864bbe7f95667504c10526f7d1f107",
+      "bytes": 1113082
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000047\\recording_summary.json": {
+      "sha256": "ae2bafb83a0dab55cb5752b9ba649512d31b45a0c2de6248d059b1ae64eda724",
+      "bytes": 3439
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000048\\alignment.jsonl": {
+      "sha256": "c34685d017b79a52129778aba2238e66913f02d4a0b50dbba407851c1180ffed",
+      "bytes": 1156753
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000048\\recording_summary.json": {
+      "sha256": "a560587a3e43963e9161e26268981a1d8d2e8d2dbf4f0e982ca7b2c5a947ef92",
+      "bytes": 3427
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000049\\alignment.jsonl": {
+      "sha256": "e43ee594bc6dbd5268b540fa6804bbfed75627d45940385faca00ee9905a5626",
+      "bytes": 995004
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\episodes\\episode_000049\\recording_summary.json": {
+      "sha256": "ef772cc380b0d59c781ad93d3727ce0b7c87959c8dfdb16821531a5d0c7a366e",
+      "bytes": 3439
+    },
+    "D:\\so-101\\evaluations\\yellow_nut_to_brown_tray\\step005000-20261020T094811\\control.jsonl": {
+      "sha256": "1d980e68c08f14c37d5a19168a59c85e5872a34d4ca846d666884df7cbce3255",
+      "bytes": 5296502
+    },
+    "D:\\so-101\\evaluations\\yellow_nut_to_brown_tray\\step005000-20261020T094811\\summary.json": {
+      "sha256": "7b5c85a30905810ce4d1bfb776fd943eab6420c7b364413d8eb7243064452ee8",
+      "bytes": 1960
+    },
+    "D:\\so-101\\datasets\\yellow_nut_to_brown_tray\\formal\\qc\\acceptance_20261019\\technical_summary.json": {
+      "sha256": "ed4d3ecc3123bbb306e8eb62107e1f84636f35e40934207c49b046cc4b13413c",
+      "bytes": 191210
+    },
+    "D:\\so-101\\.venv\\Lib\\site-packages\\lerobot\\scripts\\lerobot_teleoperate.py": {
+      "sha256": "2f2b2a9bb822d1b33b0033e9a2b0664649f959ef7da45d48629368a63ff9cf1a",
+      "bytes": 10377
+    },
+    "D:\\so-101\\.venv\\Lib\\site-packages\\lerobot\\cameras\\opencv\\camera_opencv.py": {
+      "sha256": "5a89d7e04438b441900a11b7ff5a4fb654d5a81504cb9b42464ec012c56d1046",
+      "bytes": 25695
+    }
+  },
+  "cached_batch_crosscheck": {
+    "samples": [
+      {
+        "episode": 22,
+        "frame": 0,
+        "state6_float32_exact": true,
+        "all_50_action6_float32_exact": true
+      },
+      {
+        "episode": 22,
+        "frame": 30,
+        "state6_float32_exact": true,
+        "all_50_action6_float32_exact": true
+      },
+      {
+        "episode": 22,
+        "frame": 60,
+        "state6_float32_exact": true,
+        "all_50_action6_float32_exact": true
+      },
+      {
+        "episode": 22,
+        "frame": 120,
+        "state6_float32_exact": true,
+        "all_50_action6_float32_exact": true
+      },
+      {
+        "episode": 22,
+        "frame": 180,
+        "state6_float32_exact": true,
+        "all_50_action6_float32_exact": true
+      },
+      {
+        "episode": 22,
+        "frame": 245,
+        "state6_float32_exact": true,
+        "all_50_action6_float32_exact": true
+      },
+      {
+        "episode": 22,
+        "frame": 440,
+        "state6_float32_exact": true,
+        "all_50_action6_float32_exact": true
+      },
+      {
+        "episode": 22,
+        "frame": 480,
+        "state6_float32_exact": true,
+        "all_50_action6_float32_exact": true
+      }
+    ],
+    "values_checked": 2448,
+    "method": "convert raw JSON float64 to IEEE754 float32 before exact equality with official reader fixture",
+    "all_exact": true
+  },
+  "teaching_payload": {
+    "path": "assets/timing-real.json",
+    "bytes": 4343879,
+    "sha256": "7342a171e2e7719eaeb4b8e744beaecb85df6fd673b0d7409612beb675f132e2"
+  },
+  "official_local_snapshots_byte_hash_match": {
+    "lerobot_teleoperate.py": true,
+    "camera_opencv.py": true
+  }
+}

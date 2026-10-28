@@ -14,6 +14,14 @@ A reproducible Windows SO-101 / SmolVLA project: 50 LeRobot v3 demonstrations, t
 
 动图为完整顺序的低帧率预览，时长不变；完整视频为H.264 MP4（720×1280），保留原音频。原始HEIC/MOV保留在本机，公开副本去除照片EXIF及视频隐私元信息。案例用于展示当前参考设备的结果，非统计成功率评估；不加入50条训练数据。来源与转换校验见[`docs/media/demo-manifest.json`](docs/media/demo-manifest.json)。
 
+## 从零入门教程
+
+**[阅读完整21章中文教程 →](docs/tutorial/README.md)**
+
+从真实采集数据追到SmolVLA输入输出、MLP/Transformer/Flow Matching、8GB微调与真机部署。新增真实60Hz控制/30FPS保存/异步推理时间关系，逐帧案例、源码行号、数据质量判断与自测答案均可直接在GitHub阅读。
+
+[章节目录](docs/tutorial/README.md#章节目录) · [频率与时间对齐](docs/tutorial/chapters/04-timing.md) · [真实batch](docs/tutorial/chapters/08-batch-lab.md) · [离线交互版下载](https://github.com/damonwangk/so101-yellow-nut-smolvla/releases/download/tutorial-v1.0/so101-smolvla-tutorial-offline.zip)
+
 ## 发布内容
 
 | 内容 | 位置 |
