@@ -39,6 +39,11 @@ LOADING → READY（显示第一次Enter）
 
 夹爪不参与身体归位到达判定。Q/R/故障取消准备；归位停滞或超时转HOLD。第二次Enter后不能用归位前缓存的画面启动推理。界面文字按阶段显示，是为了让操作者知道当前哪个确认有效。
 
+![固定起点与两次Enter状态图](../assets/plots/fixed-start-states.svg)
+
+<details>
+<summary>查看Mermaid图源码</summary>
+
 ```mermaid
 stateDiagram-v2
     [*] --> READY: 模型加载完成
@@ -49,6 +54,8 @@ stateDiagram-v2
     MODEL --> HOLD: Q或故障或超时
     HOLD --> HOMING: 再次本地确认
 ```
+
+</details>
 
 这是启动软件状态机的示意，不是回位避障规划。夹爪不参加身体到位判定；必须在归位完成后再确认，且不能用确认之前的缓存画面启动推理。归位路径需要现场留空与独立验证。
 

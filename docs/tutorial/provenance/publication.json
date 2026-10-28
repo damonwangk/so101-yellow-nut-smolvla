@@ -10,7 +10,7 @@
   "learning_goals": 21,
   "chapter_self_checks": 21,
   "code_snapshot_files": 31,
-  "checked_relative_links": 288,
+  "checked_relative_links": 290,
   "broken_links": [],
   "hardware_capture_training_model_inference_started": false,
   "original_source_not_modified": true,
@@ -87,9 +87,17 @@
       "bytes": 4694,
       "sha256": "7371289a42f7c4548f664f0a152bbd36ed1081c939fd21e393be70c9cde137b0"
     },
+    "assets/plots/embodied-loop.svg": {
+      "bytes": 2556,
+      "sha256": "d76337aa50ebb8314f1a690552392424af7751e84d0741f97e7055e52a51612c"
+    },
     "assets/plots/episode22-action-window.svg": {
       "bytes": 102208,
       "sha256": "ab8e67958172dd4681071e49bbee9717ff5707ce7c5cf99c0df03c8014027cc9"
+    },
+    "assets/plots/fixed-start-states.svg": {
+      "bytes": 3440,
+      "sha256": "a1de2a53dbb8428753b38463a4105ce59e5482accce76377ecd3864ab1bba638"
     },
     "assets/plots/timing-drift.svg": {
       "bytes": 62589,
@@ -148,8 +156,8 @@
       "sha256": "4e3b2539ae24515e769a5bd0a75d8209d73d187a3da28ab3955514dfbc0807b5"
     },
     "chapters/01-roadmap.md": {
-      "bytes": 14844,
-      "sha256": "80d85a1004b61a06ff771d1959c94510cfbb8ca0084ae3a5ed9986530ee7ebb6"
+      "bytes": 14985,
+      "sha256": "0551790b124ad05def9bf101fa06e4490673e523c1bd4695c80c58a8d3b0965b"
     },
     "chapters/02-setup.md": {
       "bytes": 4567,
@@ -212,8 +220,8 @@
       "sha256": "b99701bda164558fe43f4a14c54961446f6f987842fda69c42fa1b20e5247c11"
     },
     "chapters/17-homing.md": {
-      "bytes": 4860,
-      "sha256": "203430d9025de66a9e69f8bb7014d8a870fd2882caf263e35b81d3a24561fd02"
+      "bytes": 5005,
+      "sha256": "da2daf7284e995d786fae526cae77f8c70df0e1689c21146036d78f5f4620777"
     },
     "chapters/18-pitfalls.md": {
       "bytes": 3482,
@@ -399,5 +407,6 @@
       "bytes": 6556,
       "sha256": "4e90186547d5a83f16764f23d1954dafb9537573f95f93b741e5b6ff70d15ff9"
     }
-  }
+  },
+  "static_diagram_fallbacks": 2
 }
